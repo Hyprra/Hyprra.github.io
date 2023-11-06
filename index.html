@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <META NAME="Author" CONTENT="HOUANGKEO Emeline">
+    <META NAME="Robots" CONTENT="index, follow">
+    <META NAME="Keywords" CONTENT="Portfolio,HOUANGKEO,Emeline">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOUANGKEO Emeline</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="Competences.css">
+    <link rel="stylesheet" href="Parcours.css">
+    <link rel="stylesheet" href="Projets.css">
+    <link rel="stylesheet" href="Loisirs.css">
+    <link rel="stylesheet" href="Contact.css">
+    <link rel="stylesheet" href="footer.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
+    <link rel="icon" type="image/svg" sizes="32x32" href="./img/heart.svg">
+</head>
+
+<body>
+    <header>
+        <!-- La barre de navigation -->
+        <div class="logo"><img src="img/LOGO.png"></div>
+        <nav>
+            <ul class="menu">
+                <div class="fermer"></div>
+                <li class="item"><a href="#home">Accueil</a></li>
+                <li class="item"><a href="#about">A propos</a></li>
+                <li class="item deroulant"><a href="#Compétences">Compétences</a>
+                    <ul class="sous">
+                        <li><a href="#Langages">Langages</a></li>
+                        <li><a href="#Soft">Soft skills</a></li>
+                        <li><a href="#Langues">Langues</a></li>
+                    </ul>
+                </li>
+                <li class="item"><a href="#Parcours">Parcours</a></li>
+                <li class="item"><a href="#Projets">Projets</a></li>
+                <li class="item"><a href="#Loisirs">Loisirs</a></li>
+                <li class="item"><a href="#Contact">Contact</a></li>
+                <div class="scroll"></div>
+            </ul>
+        </nav>
+        <div class="menuButton"></div>
+
+    </header>
+
+    <!-- Accueil -->
+    <section class="home" id="home">
+        <div>
+            <h1 class="reveal">HOUANGKEO Emeline</h1>
+            <p class="reveal">
+                Etudiante en BUT Informatique
+            </p>
+        </div>
+
+        <button class="reveal">
+            <a href="#about"><img src="img/fleche_next.png"></a>
+        </button>
+    </section>
+    <!-- Section A propos -->
+    <section class="about" id="about">
+        <div class="presentation reveal">
+            <h2>En savoir plus sur moi</h2>
+            <p>Je m'appelle <span class="nom">HOUANGKEO Emeline</span>, j'ai 18 ans.</p>
+            <p>Actuellement étudiante à l'IUT de Marne-la-vallée, je suis dans la deuxième année de préparation de mon
+                bachelor universitaire de technologie (BUT) informatique. </p>
+            <p>Passionnée par les nouvelles technologies depuis mon plus jeune âge, j'ai pu découvrir la programmation plus en profondeur à la fin de
+                mes années de collège. J'apprécie le fait de pouvoir mettre ma créativité au service d'un projet,
+                surtout s'il s'agit d'un projet ludique.</p>
+            <p>Vous trouverez sur les projets en question repertoriés sur ce Portfolio dans la section <a
+                    href="#Projets">Projets</a></p>
+            <p>Pour obtenir plus d'informations, rendez-vous à la section <a href="#Contact">Contact</a> !</p>
+            <button class="Objbutton">
+                <a href="#obj">Voir plus</a>
+            </button>
+        </div>
+        <img src="img/avatarclair.png" class="revela">
+
+    </section>
+    <section class="obj" id="obj">
+        <h2>Objectifs et motivation</h2>
+        <p>Je souhaite obtenir mon diplôme afin
+            d'intégrer une école d'ingénieur et poursuivre ma carrière dans l'informatique.</p>
+        <p></p>
+        <div class="cliquable">
+            <div>
+                <img src="img/CV.png" alt="CV">
+                <button>
+                    <a href="CV.pdf">Télécharger mon CV </a>
+                </button>
+            </div>
+        </div>
+        <button class="Objfermer">
+            <a href="#about">Fermer</a>
+        </button>
+    </section>
+
+    <!-- Section Compétences -->
+    <section class="Compétences" id="Compétences">
+        <h2>Mes compétences</h2>
+        <!-- Langages -->
+        <div id="Langages" class="reveal">
+            <h3>Langages </h3>
+            <div class="wrapper reveal">
+                <div class="card">
+                    <div class="circle">
+                        <div class="bar"></div>
+                        <div class="box"><span>80%</span></div>
+                    </div>
+                    <div class="text">Python</div>
+                </div>
+                <div class="card HTML">
+                    <div class="circle">
+                        <div class="bar"></div>
+                        <div class="box"><span>65%</span></div>
+                    </div>
+                    <div class="text">HTML & CSS</div>
+                </div>
+                <div class="card SQL">
+                    <div class="circle">
+                        <div class="bar"></div>
+                        <div class="box"><span>70%</span></div>
+                    </div>
+                    <div class="text">SQL </div>
+                </div>
+
+                <div class="card Java">
+                    <div class="circle">
+                        <div class="bar"></div>
+                        <div class="box"><span>80%</span></div>
+                    </div>
+                    <div class="text">Java</div>
+                </div>
+                
+            </div>
+        </div>
+        <!-- Soft skills -->
+        <div id="Soft" class="reveal">
+            <h3 class="soft">Soft skills</h3>
+            <div class="soft-skills reveal ">
+                <div class="team zoom"><img src="img/team.svg"><span>Travail d'équipe</span></div>
+                <div class="idea zoom"><img src="img/idea.png"> <span>Créativité</span></div>
+                <div class="thinking zoom"><img src="img/thinking.png"> <span> Intelligence émotionnelle</span></div>
+            </div>
+        </div>
+        <!-- Langues -->
+        <div id="Langues" class="reveal">
+            <h3>Langues</h3>
+            <div class="langues reveal">
+                <div class="France zoom"><img src="img/France.svg"><span>Français</span><span>Natale</span></div>
+                <div class="Royaume-Uni zoom"><img src="img/Royaume-Uni.png"> <span>Anglais</span><span>Très bon</span></div>
+                <div class="Espagne zoom"><img src="img/Espagne.svg"> <span>Espagnol</span><span>Bon</span></div>
+                <div class="Vietnam zoom"><img src="img/Vietnam.svg"> <span>Vietnamien</span><span>Bon</span></div>
+            </div>
+        </div>
+    </section>
+    <!-- Section Parcours -->
+    <section class="Parcours" id="Parcours">
+        <h2 class="reveal">Parcours</h2>
+        <!-- Frise -->
+        <div class="frise reveal">
+            <ol>
+                <li>
+                    <div>
+                        <p>Février 2019</p>
+                        Stage d'observation<br>
+                        <a href="">Hôpital Pitié Salpêtrière</a>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <p>Juillet 2019</p>
+                        Obtention du brevet avec mention très bien
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <p>Septembre 2019</p>
+                        Entrée au lycée Emily Brontë
+                    </div>
+                </li>
+
+                <li>
+                    <div>
+                        <p>Juillet 2022</p>
+                        Obtention du baccalauréat avec mention très bien
+                    </div>
+                </li>
+
+                <li>
+                    <div>
+                        <p>Septembre 2022</p>
+                        Entrée à l'IUT de Marne la vallée
+                    </div>
+                </li>
+
+                <li></li>
+            </ol>
+
+        </div>
+    </section>
+    <!-- Section Projets -->
+    <section class="Projets" id="Projets">
+        <h2 class="reveal">Mes projets</h2>
+        <div class="projet reveal">
+            
+            <div class="BatailleBoules">
+                <h3>Bataille des Boules</h3>
+                <a href="Projets.html#boules" target="_blank">
+                <div class="image">
+                    <div class="contenu">
+                        <p class="description">Un jeu de Boules en python !</p>
+                    </div>
+                </div>
+            </a>
+            </div>
+            <div class="Grenade">
+                <h3>Site UNESCO de Grenade</h3>
+                <a href="Projets.html#Grenade" target="_blank">
+                <div class="image">
+                    <div class="contenu">
+                        <p class="description">Un site Web pour découvrir Grenade, en partenariat avec l'UNESCO</p>
+                    </div>
+                </div>
+                </a>
+            </div>
+
+            <div class="Ski">
+                <h3>Zarza-ski</h3>
+                <a href="Projets.html#Ski" target="_blank">
+                <div class="image">
+                    <div class="contenu">
+                        <p class="description">Un site pour gérer les clients d'une station de ski</p>
+                    </div>
+                </div>
+                </a>
+            </div>
+
+            <div class="Bricololo">
+                <h3>Bricololo</h3>
+                <a href="Projets.html#Bricololo" target="_blank">
+                <div class="image">
+                    <div class="contenu">
+                        <p class="description">Une maquette pour une application de bricolage</p>
+                    </div>
+                </div>
+                </a>
+            </div>
+
+            <div class="Backpack">
+                <h3>Backpack Hero</h3>
+                <a href="Projets.html#Backpack" target="_blank">
+                <div class="image">
+                    <div class="contenu">
+                        <p class="description">Un version réduite en java du jeu originel</p>
+                    </div>
+                </div>
+                </a>
+            </div>
+
+            <div class="Graphes">
+                <h3>Exploration algorithmique</h3>
+                <a href="Projets.html#Graphes" target="_blank">
+                <div class="image">
+                    <div class="contenu">
+                        <p class="description">Implémentation de différents algorithmes vus en cours de graphes</p>
+                    </div>
+                </div>
+                </a>
+            </div>
+        </div>
+
+        </div>
+        <!-- Bouton pour accéder aux projets -->
+        <button>
+            <a href="Projets.html" target="_blank">Plus d'informations</a>
+        </button>
+    </section>
+
+    <!-- Section Loisirs -->
+    <section class="Loisirs" id="Loisirs">
+        <h2>Loisirs</h2>
+        <div class="Loisir reveal">
+            <div class="musique"><img src="img/musique.png" class="zoom">
+                <h3>La musique</h3>
+                <p>J’ai commencé le piano à 6 ans, et avec cela le solfège, la chorale et mon intérêt
+                    pour la culture musicale.<br> Ainsi, j'ai continué ces activités pendant près de 10 ans. Cela a
+                    contribué fortement au développement de ma personnalité, en
+                    équilibrant l’intellect et l’affect.
+                </p>
+            </div>
+            <div class="lire"><img src="img/livre.png" class="zoom">
+                <h3>Lire</h3>
+                <p>Dès mon plus jeune âge j'ai développé une certaine affection pour la lecture. Je pouvais utiliser mon
+                    imagination et me plonger dans divers univers .</p>
+            </div>
+            <div class="jeu"><img src="img/manette.png" class="zoom">
+                <h3>Jouer aux jeux vidéos</h3>
+                <p>Bien sûr, jouer aux jeux vidéos fait partie des loisirs auquels je dédie la plus grande partie de mon
+                    temps libre. Ces jeux permettent de stimuler la mémoire, la vision, la synchronisation entre les
+                    yeux et les mains, tout en favorisant l'apprentissage. </p>
+            </div>
+            <div class="code"><img src="img/code.png" class="zoom">
+                <h3>Programmer</h3>
+                <p>Pour moi, programmer n'est pas une corvée mais un loisir. J'aime passer mon temps à établir des
+                    algorithmes visant à la résolution de problèmes. Je trouve cela fascinant.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Section Contact -->
+    <section class="Contact" id="Contact">
+        <h2 class="reveal">Me contacter</h2>
+        <!-- Formulaire -->
+        <FORM action="mailto:dieu-tien.houangkeo@edu.univ-eiffel.fr" method="post" class="reveal">
+            <LABEL for="nom">Votre nom</LABEL>
+            <br>
+            <INPUT type="text" id="nom" placeholder="ex: jean-michel" required>
+            <br>
+            <LABEL for="email">Votre adresse e-mail</LABEL>
+            <br>
+            <INPUT type="email" id="email" placeholder="ex: jean-michel@example.com" required>
+            <br>
+            <LABEL for="message">Votre message&emsp;</LABEL> <br>
+            <TEXTAREA id="commentaire_produit" name="commentaire_produit" COLS="30" ROWS="5"
+                placeholder="ex:bonjour,..."></TEXTAREA>
+
+            <br>
+            <INPUT type="submit" value="Envoyer">
+
+        </FORM>
+    </section>
+    <div id="flechehaut">
+        <a href="#top"><img src="img/fleche_next.png" /></a>
+    </div>
+    <footer>
+
+        <table>
+            <tr>
+                <td class="ttext">
+                    <h4>Mentions légales :</h4>
+                    <li>icon - Flaticon</li>
+                    <li>Wallpaper - Ivan Samkov</li>
+                    <li>Avatar - Picrew</li>
+                </td>
+                <td class="ttext">
+                    <div class="elembas">
+                        <h4>Accès rapide</h4>
+                        <a href="./index.html">Accueil</a><span>|</span><a href="./Projets.html">Projets</a>
+                    </div>
+                </td>
+                <td class="ttext">
+                    <div class="social">
+                        <h4>Réseaux</h4>
+                        <a href="https://github.com/Hyprra"><img src="./img/github.png"></a>
+                        <a href="https://www.instagram.com/ff.grenade/"><img src="./img/email.png"></a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <div class="rights">
+                        Copyright © 2022 ⋅ HOUANGKEO Emeline ⋅ Tous droits réservés
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </footer>
+    <!-- Code pour les progress bar -->
+    <script src="progress.js"></script>
+    <!-- Code pour le menu -->
+    <script src="menu.js"></script>
+
+    <script src="bouton.js"></script>
+</body>
+
+</html>

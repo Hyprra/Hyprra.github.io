@@ -1,0 +1,122 @@
+    html {
+        scroll-behavior: smooth;
+    }
+
+    section {
+        padding: 2% 5% 5%;
+        background-color: rgb(218, 211, 219);
+        min-height: 100vh;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #Titre {
+        background-color: #2c2631;
+        display: flex;
+        flex-direction: column;
+        column-gap: 10%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1 {
+        color: #dbd6ff;
+        font-size: 4em;
+        padding: 40px 40px;
+        border: 1px solid #dbd6ff;
+        border-radius: 10px;
+        margin: 40px;
+        text-align: center;
+        text-decoration: underline;
+    }
+
+    button {
+        border: none;
+        background-color: transparent;
+    }
+
+    button img {
+        width: 60px;
+        height: 60px;
+    }
+
+    #Projets h2 {
+        color: #2c2631;
+        text-align: center;
+        padding-right: 1%;
+        font-size: 3em;
+        text-decoration: underline;
+        padding: 5% 0;
+        padding-right: 1%;
+    }
+
+    #Projets div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 2%;
+    }
+
+    img {
+        width: 60%;
+    }
+
+    #Projets p , #Projets ul {
+        color: #2c2631;
+        padding-right: 1%;
+        font-size: 1.5em;
+        padding: 3% 0;
+    }
+
+    #Projets p {
+        text-align: center;
+    }
+
+
+    .bout {
+        display: block;
+        margin: auto auto;
+        padding: 20px;
+        border-radius: 10px;
+        border: 3px solid #957dad;
+        background-color: #FFE5EC;
+        margin-bottom: 5%;
+    }
+
+    .bout>a {
+        font-size: 1.7em;
+        text-decoration: none;
+        font-weight: 900;
+        color: #957dad !important;
+    }
+
+    .comp{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border : 3px solid white;
+        border-radius: 10px;
+        padding: 2%;
+        margin-bottom: 5%;
+    }
+    .comp p{
+        text-align: left!important;
+        width: 100%;
+    }
+
+    .subtitle{
+        font-size: 2em!important;
+        color:#957dad!important;
+        text-shadow: 2px 1px 1px #FFE5EC;
+    }
+
+    .title{
+        width: 100%;
+        font-size: 5em!important;
+        text-align: left!important; 
+        color:#957dad!important;
+        text-shadow: 2px 1px 1px #FFE5EC;
+    }
+

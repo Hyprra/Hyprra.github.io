@@ -1,0 +1,76 @@
+.about {
+    display: flex;
+    padding: 5% 5%;
+    min-height: 100vh;
+    background-color: #2c2631; /* Couleur de fond */
+}
+
+.about p,
+.obj p {
+    color: #FFE5EC; /* Couleur du texte */
+    font-size: 1.4em; /* Taille de police */
+    padding: 2% 0;
+    padding-left: 2%;
+}
+
+.about img {
+    width: 35vw; /* Largeur de l'image */
+    height: 35vw; /* Hauteur de l'image */
+    float: right;
+    border-radius: 30px; /* Bordure arrondie */
+}
+
+.about .nom {
+    font-weight: 900; /* Graisse de la police */
+}
+
+.about a {
+    color: #FFE5EC; /* Couleur des liens */
+}
+
+.obj {
+    min-height: 100vh;
+    background-color: #2c2631;
+    display: none; /* Masquer l'élément */
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5%;
+}
+
+.cliquable {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.cliquable button {
+    margin: 5% 0;
+}
+
+.cliquable div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.obj img {
+    width: 50%;
+}
+
+.cliquable button > a {
+    font-size: 20px;
+}
+
+.Objbutton {
+    margin-top: 10%;
+}
+
+@media screen and (min-width: 1200px) {
+    .presentation {
+        padding-right: 10%;
+    }
+    .Objbutton {
+        margin-top: 5%;
+    }
+}

@@ -1,0 +1,59 @@
+/* Styles pour le formulaire */
+form {
+    margin: auto auto;
+    width:70%;
+    padding: 1em;
+    border: 3px solid white;
+    border-radius: 1em;
+
+    }
+    
+    label {
+    color:#957dad;
+    font-size: 1.9em;
+    text-shadow: 2px 1px 1px #FFE5EC;
+    }
+    
+    input,textarea {
+    padding: 1%;
+    border: 1px solid #957dad;
+    border-radius: 5px;
+    width: 98%;
+    margin: 2%;
+    font-size: 15px;
+    }
+    
+    input[type=submit]{
+    color: white;
+    background-color: #957dad;
+    font-size: 1.6vw;
+    border-radius: 80px;
+    border: none;
+    width: 12vw;
+    margin-top:3%;
+    padding:10px ;
+    cursor: pointer;
+    }
+
+@media (max-width:700px){
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+    }
+    label{
+        font-size: 4vh;
+    }
+    input,
+    textarea{
+        margin-bottom: 10%;
+    }
+
+    input[type=submit]{
+        font-size: 3vh;
+        width: 50%;
+    }
+}
+    
