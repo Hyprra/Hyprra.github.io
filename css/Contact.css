@@ -1,0 +1,97 @@
+/* Styles pour le formulaire */
+form {
+    margin: auto auto;
+    width: 70%;
+    padding: 1em;
+    border: 3px solid white;
+    border-radius: 1em;
+
+}
+
+label {
+    color: var(--primary-color);
+    font-size: 1.9em;
+    text-shadow: 2px 1px 1px #FFE5EC;
+}
+
+input,
+textarea {
+    padding: 1%;
+    border: 1px solid #957dad;
+    border-radius: 5px;
+    width: 98%;
+    margin: 2%;
+    font-size: 15px;
+}
+
+input[type=submit] {
+    color: white;
+    background-color: var(--primary-color);
+    font-size: 1.6vw;
+    border-radius: 80px;
+    border: none;
+    width: 12vw;
+    margin-top: 3%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#Contact h2{
+    padding-bottom: 0;
+}
+
+.bubble-speech {
+    position: relative;
+    margin: auto;
+    line-height: 22px;
+    letter-spacing: 1px;
+    margin-top: 16px;
+    margin-bottom: 48px;
+    width: 300px;
+    background-color: #efefef;
+    padding: 16px;
+    text-align: center;
+    border:var(--text-color2) 1px solid;
+}
+
+.bubble-speech.bubble-center:after {
+    z-index: 900;
+    display: block;
+    content: "";
+    position: absolute;
+    top: -11px;
+    left: 50%;
+    transform: translateX(-50%); 
+    border-right: 20px transparent solid;
+    border-bottom: 12px #efefef solid;
+    border-left: 20px transparent solid;
+  }
+
+@media (max-width:700px) {
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+    }
+
+    label {
+        font-size: 4vh;
+    }
+
+    input,
+    textarea {
+        margin-bottom: 10%;
+    }
+
+    input[type=submit] {
+        font-size: 20px;
+        width: 50%;
+    }
+
+    .bubble-speech {
+        width: 200px;
+    }
+
+}

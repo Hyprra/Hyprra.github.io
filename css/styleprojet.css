@@ -1,0 +1,356 @@
+    html {
+        scroll-behavior: smooth;
+    }
+
+    /* ===== Scrollbar CSS ===== */
+    /* Firefox */
+    * {
+        scrollbar-width: thin;
+        scrollbar-color: #ea89d5 #ffffff;
+    }
+
+    /* Chrome, Edge, and Safari */
+    *::-webkit-scrollbar {
+        width: 12px;
+    }
+
+    *::-webkit-scrollbar-track {
+        background: #ffffff;
+    }
+
+    *::-webkit-scrollbar-thumb {
+        background-color: #ea89d5;
+        border-radius: 10px;
+        border: 3px solid #ffffff;
+    }
+
+    section {
+        padding: 2% 1%;
+        min-height: 100vh;
+    }
+
+    #Titre {
+        background-color: #2c2631;
+        display: flex;
+        flex-direction: row;
+        padding-top: 70px;
+    }
+
+    h1 {
+        color: white;
+        font-size: 4em;
+        padding-top: 2%;
+        border-radius: 10px;
+        margin: 40px;
+        width: fit-content;
+    }
+
+    h3{
+        color: white;
+        font-weight: 600;
+        font-size: 3em;
+        padding-left: 5%;
+        padding-bottom: 50px;
+        border-radius: 10px;
+        margin: auto;
+        width: fit-content;
+        text-align: center;
+    }
+
+    #Projets p,
+    #Projets ul {
+        color: #FFE5EC;
+        font-size: 1.2em;
+        padding: 3% 0;
+        text-align: center;
+    }
+
+
+    #Projets h2 {
+        color: var(--primary-color);
+        text-shadow: 2px 1px 1px #FFE5EC;
+        padding-right: 1%;
+        font-size: 3em;
+        padding-bottom: 5%;
+    }
+
+    .nav {
+        border-bottom: 1px solid #FFE5EC;
+    }
+
+    /* Style pour la liste des projets */
+
+    .lstprojets {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+    }
+
+    .lstprojets ul {
+        color: #FFE5EC;
+        list-style: url('../img/pink-heart.svg');
+        line-height: 3em;
+        font-size: 1em;
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        margin-left: 20%;
+    }
+
+    .lstprojets ul li {
+        padding-left: 5px;
+        cursor: pointer;
+    }
+
+    .proj-wrapper {
+        margin-top: 5%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .proj-wrapper>div {
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        opacity: 0;
+        transition: opacity .3s ease-in;
+    }
+
+    .unhide{
+        opacity: 1!important;
+        transition: opacity .3s ease-in!important;
+    }
+
+    .proj-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 5%;
+    }
+
+    img {
+        width: 50%;
+    }
+
+    .content-wrapper {
+        display: flex;
+        flex-direction: row !important;
+        justify-content: space-between;
+        width: 90%;
+    }
+
+    .content-wrapper>div {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .content-wrapper p {
+        margin-left: 5%;
+    }
+
+    /* Style pour le bouton */
+
+    .bout {
+        display: block;
+        padding: 20px;
+        border-radius: 10px;
+        border: 3px solid #957dad;
+        background-color: #FFE5EC;
+        margin-bottom: 5%;
+        width: fit-content;
+    }
+
+    .bout>a {
+        font-size: 1.7em;
+        text-decoration: none;
+        font-weight: 900;
+        color: var(--primary-color) !important;
+    }
+
+    /* Style pour les sections "Langages" et "Outils" */
+
+    .langlog{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:space-around;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 70px;
+        border-top:#FFE5EC 1px solid;
+    }
+
+    .langlog .title{
+        font-size:2em!important;
+        margin-bottom: 10px;
+    }
+
+    .lang,
+    .log{
+        width: max-content;
+    }
+
+    .langages-container,
+    .logiciels-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .langages-container div,
+    .logiciels-container div{
+        width: 180px;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    /* Styles pour la section "Compétences" */
+
+    .comp {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 3px solid white;
+        border-radius: 10px;
+        padding: 2%;
+        margin-bottom: 5%;
+    }
+
+    .comp p {
+        text-align: left !important;
+        width: 100%;
+        padding: 20px 0 !important;
+    }
+
+    .subtitle {
+        font-size: 1.5em !important;
+        color: var(--primary-color) !important;
+        text-shadow: 2px 1px 1px #FFE5EC;
+    }
+
+
+    .title {
+        width: 100%;
+        font-size: 3em !important;
+        text-align: left !important;
+        color: var(--primary-color) !important;
+        text-shadow: 2px 1px 1px #FFE5EC;
+    }
+
+    .comp li{
+        text-align: left!important;
+    }
+
+    .bloc-comp {
+        display: flex;
+        flex-direction: row;
+        overflow: hidden;
+        justify-content: space-around;
+        align-items: center;
+        border:#2c2631 1px solid;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 1);
+        box-shadow: 0 0 15px rgba(100, 58, 97, 0.2);
+        padding: 10px;
+    }
+
+    .content-comp{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 50px;
+        font-size: 1.1em;
+        text-align: center;
+        color: var(--background-color);
+        font-weight: 900;
+    }
+
+    .languette li{
+        color: var(--secondary-color);
+        font-size: 1em;
+        font-weight: 500;
+    }
+
+    .comp-link{
+        margin:50px 0;
+        text-decoration: none;
+        width:100%;
+    }
+
+    /* Animation de révélation */
+    .reveal {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    .visible {
+        opacity: 1;
+        transform: translateY(0);
+        transition: .5s ease-out;
+    }
+
+    @media screen and (max-width: 1700px) {
+        .lang,
+        .log{
+            width: 100%;    
+        }
+    }
+    
+
+    @media screen and (max-width: 768px) {
+        #Titre {
+            flex-direction: column !important;
+        }
+
+        .proj-content {
+            margin-left: 0;
+        }
+
+        .proj-wrapper>div {
+            margin-top: 5%;
+        }
+
+        .proj-wrapper>div div {
+            margin-top: 5%;
+        }
+
+        .proj-content img {
+            width: 100%;
+        }
+
+        .content-wrapper p {
+            margin-left: 0;
+        }
+
+        .bloc-comp{
+            flex-direction: column;
+        }
+
+        .bout{
+            margin-top: 5%;
+            padding: 10px 15px;
+        }
+
+        .bout>a {
+            font-size: 1.5em;
+        }
+    }
+
+    @media screen and (max-width: 300px) {
+        h2{
+            word-break: break-all;
+        }
+    }
+
+    @media screen and (min-width:1500px){
+        .proj-content p{
+           width: 80%;
+        }
+    }

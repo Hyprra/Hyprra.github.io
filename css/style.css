@@ -1,0 +1,276 @@
+/* Définition des polices personnalisées */
+@font-face {
+    font-family: 'Merry';
+    src: url(../font/Merriweather_Sans/MerriweatherSans-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "Urdu";
+    src: url(../font/Noto_Nastaliq_Urdu/NotoNastaliqUrdu-VariableFont_wght.ttf);
+}
+
+/* Styles généraux pour le document HTML */
+html {
+    scroll-behavior: smooth;
+    /* Défilement fluide */
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #ea89d5 #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #ea89d5;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+}
+
+/* Styles pour la section "home" */
+.home {
+    position: relative;
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0.6) url(../img/accueil.jpg)no-repeat;
+    /* Image d'arrière-plan */
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    column-gap: 10%;
+    justify-content: center;
+    align-items: center;
+}
+
+.home h1 {
+    color: #dbd6ff;
+    background-color: rgba(40, 24, 78, 0.6);
+    font-size: 3em;
+    padding: 40px 20px;
+    border: 1px solid #dbd6ff;
+    border-radius: 10px;
+    margin: 40px;
+    text-align: center;
+}
+
+.home p {
+    color: #dbd6ff;
+    text-shadow: 2px 2px 1px rgba(40, 24, 78);
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.home button {
+    position: absolute;
+    bottom: 10%;
+    border: none;
+    background-color: transparent;
+}
+
+.home button img {
+    width: 60px;
+    height: 60px;
+}
+
+/* Styles pour les sections "Compétences", "Contact" et "Projets" */
+.Compétences,
+.Contact,
+.Projets {
+    padding: 2%;
+    background-color: rgb(218, 211, 219);
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.Compétences h2,
+.Contact h2,
+.Projets h2 {
+    color: #2c2631;
+    text-align: center;
+    padding-right: 1%;
+}
+
+h2 {
+    color: #FFE5EC;
+    font-size: 3em;
+    padding: 5% 0;
+    padding-right: 1%;
+    font-family: Merry;
+}
+
+h3 {
+    font-family: Merry;
+    font-size: 2em;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    display: block;
+    padding: 20px;
+    border-radius: 10px;
+    border: 3px solid #957dad;
+    background-color: #FFE5EC;
+    font-size: 1em;
+    font-weight: 900;
+    color: var(--primary-color) !important;
+    cursor: pointer;
+}
+
+/* Animation de révélation */
+.reveal {
+    opacity: 0;
+    transform: translateY(-30px);
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: .5s ease-out;
+}
+
+/* Zoom au survol */
+.zoom {
+    transition: transform .1s;
+}
+
+.zoom:hover {
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+
+/*
+    CSS Pour la fenêtre ouvrante
+*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: all 0.5s ease-in-out;
+    padding: 0 !important;;
+}
+
+.modal-content {
+    position: absolute;
+    top: auto;
+    left: 20%;
+    margin: 50px auto;
+    border: 1px solid #999;
+    width: 60%;
+    background-color: rgba(44, 38, 49, 0.9);
+    padding-bottom: 20px;
+    border-radius: 10px;
+}
+
+.modal-content div {
+    color: var(--text-color2);
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.modal-title {
+    padding: 30px;
+    padding-top: 40px;
+    font-size: 1.4em;
+    font-weight: 1000;
+}
+
+.close {
+    color: var(--text-color2);
+    float: right;
+    font-size: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.modal-subtitle {
+    text-align: left;
+    margin-left: 15px;
+    font-size: 1.1em;
+    font-weight: 900;
+}
+
+.modal ul {
+    text-align: left;
+    padding: 10px;
+    margin-left: 50px;
+    color: whitesmoke;
+    padding-bottom: 20px;
+}
+
+.modal li {
+    padding: 5px;
+    font-size: 0.95em;
+}
+
+/* Media queries pour la mise en page responsive */
+@media (max-width:1060px) {
+    .about {
+        flex-wrap: wrap;
+    }
+
+    .about img {
+        margin: auto auto;
+        margin-top: 2%;
+    }
+
+    .about p {
+        text-align: center;
+    }
+
+    .modal-content{
+        left: 0;
+        width:100%;
+    }
+}
+
+@media(max-width:430px) {
+    .home h1 {
+        font-size: 9vw;
+    }
+
+    .home p {
+        font-size: 6vw;
+    }
+}
+
+@media(max-width:320px) {
+    .home h1 {
+        font-size: 8vw;
+    }
+
+    .home p {
+        font-size: 6vw;
+    }
+
+    h2 {
+        font-size: 10vw;
+    }
+
+    button>a {
+        font-size: 6vw !important;
+    }
+}

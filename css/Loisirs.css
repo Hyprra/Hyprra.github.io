@@ -1,0 +1,58 @@
+.Loisirs{
+    min-height: 105vh;
+    background-color: #2c2631;
+}
+
+.Loisirs h2{
+    padding-left: 0;
+    text-align: center;
+}
+
+.Loisir{
+    padding: 0 2%;
+    padding-bottom: 5%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #2c2631;
+}
+
+.Loisir img{
+    width: 150px;
+}
+
+.Loisir div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: auto auto;
+    margin-top: 5%;
+    padding: 2% 0;
+    border: 1px solid #dbd6ff;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.05);
+    width: 350px;
+    height: 500px;
+}
+
+.Loisirs h3{
+    margin-top: 15%;
+    font-size: 1.5em;
+    color: var(--primary-color);
+    font-weight: 900;
+}
+
+.Loisirs p{
+    margin-top: 5%;
+    padding:5% 7%;
+    color: #dbd6ff;
+    text-align: justify;
+}
+
+@media(min-width:2200px){
+    .Loisir div{
+        width: 500px;
+        height:auto;
+    }
+}

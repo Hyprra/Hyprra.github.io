@@ -9,15 +9,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HOUANGKEO Emeline</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="navbar.css" />
-    <link rel="stylesheet" href="about.css">
-    <link rel="stylesheet" href="Competences.css">
-    <link rel="stylesheet" href="Parcours.css">
-    <link rel="stylesheet" href="Projets.css">
-    <link rel="stylesheet" href="Loisirs.css">
-    <link rel="stylesheet" href="Contact.css">
-    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="css/varColor.css">
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/Competences.css">
+    <link rel="stylesheet" href="css/Parcours.css">
+    <link rel="stylesheet" href="css/Projets.css">
+    <link rel="stylesheet" href="css/Loisirs.css">
+    <link rel="stylesheet" href="css/Contact.css">
+    <link rel="stylesheet" href="css/footer.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
     <link rel="icon" type="image/svg" sizes="32x32" href="./img/heart.svg">
@@ -26,17 +28,15 @@
 <body>
     <header>
         <!-- La barre de navigation -->
-        <div class="logo"><img src="img/LOGO.png"></div>
+        <div class="logo"><a href="#home"><img src="img/LOGO.png"></a></div>
         <nav>
             <ul class="menu">
                 <div class="fermer"></div>
-                <li class="item"><a href="#home">Accueil</a></li>
                 <li class="item"><a href="#about">A propos</a></li>
                 <li class="item deroulant"><a href="#Compétences">Compétences</a>
                     <ul class="sous">
-                        <li><a href="#Langages">Langages</a></li>
+                        <li><a href="#Compétences">Hard skills</a></li>
                         <li><a href="#Soft">Soft skills</a></li>
-                        <li><a href="#Langues">Langues</a></li>
                     </ul>
                 </li>
                 <li class="item"><a href="#Parcours">Parcours</a></li>
@@ -65,98 +65,536 @@
     </section>
     <!-- Section A propos -->
     <section class="about" id="about">
-        <div class="presentation reveal">
+        <div class="presentation reveal" id="presentation">
             <h2>En savoir plus sur moi</h2>
             <p>Je m'appelle <span class="nom">HOUANGKEO Emeline</span>, j'ai 18 ans.</p>
             <p>Actuellement étudiante à l'IUT de Marne-la-vallée, je suis dans la deuxième année de préparation de mon
-                bachelor universitaire de technologie (BUT) informatique. </p>
-            <p>Passionnée par les nouvelles technologies depuis mon plus jeune âge, j'ai pu découvrir la programmation plus en profondeur à la fin de
-                mes années de collège. J'apprécie le fait de pouvoir mettre ma créativité au service d'un projet,
-                surtout s'il s'agit d'un projet ludique.</p>
-            <p>Vous trouverez sur les projets en question repertoriés sur ce Portfolio dans la section <a
-                    href="#Projets">Projets</a></p>
-            <p>Pour obtenir plus d'informations, rendez-vous à la section <a href="#Contact">Contact</a> !</p>
-            <button class="Objbutton">
-                <a href="#obj">Voir plus</a>
-            </button>
-        </div>
-        <img src="img/avatarclair.png" class="revela">
-
-    </section>
-    <section class="obj" id="obj">
-        <h2>Objectifs et motivation</h2>
-        <p>Je souhaite obtenir mon diplôme afin
-            d'intégrer une école d'ingénieur et poursuivre ma carrière dans l'informatique.</p>
-        <p></p>
-        <div class="cliquable">
-            <div>
-                <img src="img/CV.png" alt="CV">
-                <button>
-                    <a href="CV.pdf">Télécharger mon CV </a>
-                </button>
+                BUT informatique. Je suis le parcours « Réalisation d’applications : conception, développement,
+                validation » </p>
+            <p>Exposée aux nouvelles technologies depuis mon plus jeune âge, j'ai pu explorer la programmation plus en
+                profondeur grâce à mon entrée en BUT Informatique.</p>
+            <p>J'apprécie pouvoir m'inscrire dans une dynamique collaborative qui laisse place à ma créativité.
+                Notamment dans les projets auxquels je participe et dans lesquels je m'investis pleinement.</p>
+            <p>Vous trouverez tout sur mes projets <a href="#Projets">ici</a></p>
+            <div class="align-button">
+                <a href="#obj">
+                    <button class="Objbutton">
+                        Voir plus
+                    </button>
+                </a>
             </div>
         </div>
-        <button class="Objfermer">
-            <a href="#about">Fermer</a>
-        </button>
+        <div class="obj" id="obj">
+            <h2>Objectifs et motivation</h2>
+            <p>Je souhaite intégrer une école d'ingénieur afin de de bénéficier d'une formation avancée, de me
+                préparer à des opportunités professionnelles passionnantes et surtout poursuivre ma carrière dans
+                l'informatique.
+                Je suis déterminée à approfondir mes connaissances techniques et théoriques.
+                Cette soif de savoir m'incite à aspirer à devenir une ingénieure informatique qualifiée, capable de
+                concevoir des
+                solutions innovantes et de contribuer au progrès technologique.</p>
+            <p></p>
+            <div class="cliquable">
+                <a href="CV.pdf">
+                    <img src="img/CV.png" alt="CV">
+
+                    <button>
+                        Télécharger mon CV
+                    </button>
+                </a>
+            </div>
+            <div class="align-button">
+                <a href="#about">
+                    <button class="Objfermer">
+                        Fermer
+                    </button>
+                </a>
+            </div>
+        </div>
+        <img src="img/avatarclair.png" class="reveal">
+
     </section>
+
 
     <!-- Section Compétences -->
     <section class="Compétences" id="Compétences">
-        <h2>Mes compétences</h2>
         <!-- Langages -->
+        <h2 id="Hard-Skills">Hard Skills</h2>
+
+        <div class="academique" id="academique">
+            <h3>Compétences académiques</h3>
+            <div class="switch-div">
+                <p>Afficher toutes les descriptions</p>
+                <input type="checkbox" id="switch" /><label id="switch-label" for="switch">Toggle</label>
+            </div>
+            <div class="academique-wrapper">
+                <div class="bloc-comp">
+                    <div class="content-comp">
+                        <p>Réaliser un développement d’application</p>
+                    </div>
+                    <div class="languette" id="languette">
+                        <br>
+                        <p>Développer - c'est-à-dire concevoir, coder, tester et intégrer - une solution informatique
+                            pour un client.</p>
+                        <ul>
+                            <a href="./Projets.html?projet=Boules">
+                                <li>Bataille des boules</li>
+                            </a>
+                            <a href="./Projets.html?projet=Backpack">
+                                <li>BackPack Hero</li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bloc-comp">
+                    <div class="content-comp">
+                        <p>Optimiser des applications informatiques</p>
+                    </div>
+                    <div class="languette" id="languette">
+                        <br>
+                        <p>Proposer des applications informatiques optimisées en fonction de critères spécifiques: temps
+                            d'exécution, précision, consommation de ressources</p>
+                        <ul>
+                            <a href="./Projets.html?projet=Boules">
+                                <li>Bataille des boules</li>
+                            </a>
+                            <a href="./Projets.html?projet=Graphes">
+                                <li>Exploration algorithmique</li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bloc-comp">
+                    <div class="content-comp">
+                        <p>Administrer des systèmes informatiques communicants complexes</p>
+                    </div>
+                    <div class="languette" id="languette">
+                        <br>
+                        <p>Installer, configurer, mettre à disposition, maintenir en conditions opérationnelles des
+                            infrastructures, des services et des réseaux et optimiser le système informatique d'une
+                            organisation</p>
+                    </div>
+                </div>
+                <div class="bloc-comp">
+                    <div class="content-comp">
+                        <p>Gérer des données de l’information</p>
+                    </div>
+                    <div class="languette" id="languette">
+                        <br>
+                        <p>Concevoir, gérer, administrer et exploiter les données de l'entreprise et mettre à
+                            disposition toutes les informations pour un bon pilotage de l'entreprise</p>
+                        <ul>
+                            <a href="./Projets.html?projet=Ski">
+                                <li>Zarza-Ski</li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bloc-comp">
+                    <div class="content-comp">
+                        <p>Conduire un projet</p>
+                    </div>
+                    <div class="languette" id="languette">
+                        <br>
+                        <p>Satisfaire les besoins des utilisateurs au regard de la chaîne de valeur du client, organiser
+                            et piloter un projet informatique avec des méthodes classiques ou agiles</p>
+                        <ul>
+                            <a href="./Projets.html?projet=Bricololo">
+                                <li>Bricololo</li>
+                            </a>
+                            <a href="./Projets.html?projet=Grenade">
+                                <li>Grenade</li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bloc-comp">
+                    <div class="content-comp">
+                        <p>Travailler dans une équipe informatique</p>
+                    </div>
+                    <div class="languette" id="languette">
+                        <p>Acquérir, développer et exploiter les aptitudes nécessaires pour travailler efficacement dans
+                            une équipe informatique</p>
+                        <ul>
+                            <a href="./Projets.html?projet=Grenade">
+                                <li>Grenade</li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="toggleDiv1" style="display: none;">
+            <div class="modal-content">
+                <div>
+                    <div>
+                        <a class="close">&times;</a>
+                        <p class="modal-title">HTML & CSS</p>
+                    </div>
+                    <div class="langage-desc">
+                        <p class="modal-subtitle">HTML (HyperText Markup Language) :</p>
+
+                        <ul>
+                            <li>Créer une structure de base pour une page web.</li>
+                            <li>Utiliser des balises sémantiques pour structurer le contenu.</li>
+                            <li>Insérer des liens hypertexte et des images.</li>
+                            <li>Utiliser les balises de liste pour créer des listes ordonnées et non ordonnées.</li>
+                        </ul>
+                        <p class="modal-subtitle">CSS (Cascading Style Sheets) :</p>
+
+                        <ul>
+                            <li>Appliquer des styles visuels à une page HTML en utilisant des règles CSS.</li>
+                            <li>Utiliser des sélecteurs pour cibler des éléments spécifiques et leur appliquer des
+                                styles.
+                            </li>
+                            <li>Contrôler la mise en page en utilisant des propriétés CSS telles que la largeur, la
+                                hauteur,
+                                le positionnement, les marges et les rembourrages.</li>
+                            <li>Appliquer des styles de texte, tels que la couleur, la taille de police, la police de
+                                caractères, l'espacement des lettres et des mots.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="toggleDiv2" style="display: none;">
+            <div class="modal-content">
+                <div>
+                    <div>
+                        <a class="close">&times;</a>
+                        <p class="modal-title">Java</p>
+                    </div>
+                    <div class="langage-desc">
+                        <ul>
+                            <li>Écrire des programmes Java en utilisant les concepts de base tels que les variables, les
+                                types de données, les opérateurs et les structures de contrôle.</li>
+                            <li>Manipuler des tableaux et des collections de données.</li>
+                            <li>Comprendre et utiliser les principes de l'orienté objet, tels que les classes, les
+                                objets, l'héritage et le polymorphisme.</li>
+                            <li>Implémenter des interfaces et utiliser des classes abstraites.</li>
+                            <li>Gérer les exceptions et les erreurs dans les programmes Java.</li>
+                            <li>Utiliser des bibliothèques standard de Java pour des tâches courantes, telles que
+                                l'entrée/sortie, la manipulation de fichiers et les opérations sur les chaînes de
+                                caractères.</li>
+                            <li>Créer des interfaces graphiques simples en utilisant des bibliothèques telles que JavaFX
+                                ou Swing.</li>
+                            <li>Comprendre les concepts de base de la programmation réseau en Java, tels que les sockets
+                                et les protocoles de communication.</li>
+                            <li>Utiliser des outils de développement Java tels que l'environnement de développement
+                                intégré (IDE) Eclipse ou IntelliJ.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="toggleDiv3" style="display: none;">
+            <div class="modal-content">
+                <div>
+                    <div>
+                        <a class="close">&times;</a>
+                        <p class="modal-title">PHP</p>
+                    </div>
+                    <div class="langage-desc">
+                        <ul>
+                            <li>Écrire des scripts PHP pour créer des sites web dynamiques.</li>
+                            <li>Manipuler des variables, des tableaux et des chaînes de caractères en PHP.</li>
+                            <li>Utiliser des structures de contrôle, tels que les boucles et les conditions, pour
+                                contrôler le flux d'exécution du code.</li>
+                            <li>Interagir avec des bases de données en utilisant des requêtes SQL et la connexion à
+                                MySQL.</li>
+                            <li>Gérer les formulaires HTML et traiter les données soumises par les utilisateurs.</li>
+                            <li>Utiliser des sessions et des cookies pour gérer l'état de l'application.</li>
+                            <li>Manipuler des fichiers et des répertoires sur le serveur.</li>
+                            <li>Travailler avec des concepts avancés tels que les fonctions, les classes et les espaces
+                                de noms.</li>
+                            <li>Comprendre les concepts de base de la sécurité web et appliquer des mesures de
+                                protection contre les attaques courantes.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="toggleDiv4" style="display: none;">
+            <div class="modal-content">
+                <div>
+                    <div>
+                        <a class="close">&times;</a>
+                        <p class="modal-title">Python</p>
+                    </div>
+                    <div class="langage-desc">
+                        <ul>
+                            <li>Écrire des programmes en Python en utilisant les concepts de base tels que les
+                                variables, les types de données, les opérations arithmétiques et les structures de
+                                contrôle.</li>
+                            <li>Manipuler des listes, des tuples, des dictionnaires et d'autres structures de données en
+                                Python.</li>
+                            <li>Utiliser des boucles et des conditions pour contrôler le flux d'exécution du code.</li>
+                            <li>Créer et utiliser des fonctions pour organiser le code en blocs réutilisables.</li>
+                            <li>Travailler avec des fichiers, lire et écrire des données.</li>
+                            <li>Appliquer la récursivité pour résoudre des problèmes en utilisant des fonctions
+                                récursives.</li>
+                            <li>Utiliser des bibliothèques et des modules Python pour étendre les fonctionnalités du
+                                langage, tels que NumPy, Pandas et matplotlib pour l'analyse de données et la
+                                visualisation.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="toggleDiv5" style="display: none;">
+            <div class="modal-content">
+                <div>
+                    <div>
+                        <a class="close">&times;</a>
+                        <p class="modal-title">C</p>
+                    </div>
+                    <div class="langage-desc">
+                        <ul>
+                            <li>Comprendre les concepts de base du langage C, tels que les variables, les types de
+                                données et les opérations arithmétiques.</li>
+                            <li>Utiliser les structures de contrôle, telles que les boucles et les conditions, pour
+                                contrôler le flux d'exécution du code.</li>
+                            <li>Manipuler des tableaux et des pointeurs pour gérer et accéder aux données en mémoire.
+                            </li>
+                            <li>Créer et utiliser des fonctions pour organiser le code en blocs réutilisables.</li>
+                            <li>Comprendre les concepts de base de l'adressage mémoire et de la gestion des pointeurs en
+                                C.</li>
+                            <li>Utiliser des bibliothèques standard de C pour des opérations courantes, telles que la
+                                manipulation de chaînes de caractères, l'entrée/sortie et la gestion des fichiers.</li>
+                            <li>Optimiser les performances du code en utilisant des techniques telles que l'utilisation
+                                d'algorithmes efficaces et la minimisation des accès mémoire.</li>
+                            <li>Comprendre et implémenter des structures de données avancées telles que les listes
+                                chaînées, les piles, les files, les arbres et les graphes.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="toggleDiv6" style="display: none;">
+            <div class="modal-content">
+                <div>
+                    <div>
+                        <a class="close">&times;</a>
+                        <p class="modal-title">JS</p>
+                    </div>
+                    <div class="langage-desc">
+                        <ul>
+                            <li>Écrire des scripts JavaScript pour ajouter de l'interactivité aux pages web.</li>
+                            <li>Manipuler et modifier le contenu HTML et les styles CSS d'une page web en utilisant le
+                                DOM (Document Object Model).</li>
+                            <li>Gérer les événements tels que les clics de souris, les pressions de touches et les
+                                soumissions de formulaires.</li>
+                            <li>Utiliser des structures de contrôle, telles que les boucles et les conditions, pour
+                                contrôler le flux d'exécution du code JavaScript.</li>
+                            <li>Utiliser des fonctions pour organiser le code en blocs réutilisables et pour créer des
+                                fonctions anonymes (fonctions fléchées).</li>
+                            <li>Utiliser des bibliothèques et des frameworks JavaScript populaires tels que jQuery,
+                                React, Angular ou Vue.js.</li>
+                            <li>Utiliser des outils de débogage et de développement JavaScript tels que les consoles de
+                                navigateur et les outils de développement intégrés.</li>
+                            <li>Manipuler les événements, les timers et les animations pour créer des expériences
+                                interactives.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div id="Langages" class="reveal">
             <h3>Langages </h3>
+            <br>
+            <p>Note : Les pourcentages implémentés sont seulement le fruit d'une évaluation à l'instant t. Ils
+                servent
+                d'indicateurs de compétences et doivent relativisés par rapport au niveau d'étude actuel. </p>
+            <p>Cliquez sur les différents pourcentages pour savoir plus en détails les compétences maîtrisées dans ce
+                langage
+            </p>
             <div class="wrapper reveal">
-                <div class="card">
+
+                <div class="card HTML toggleButton zoom" data-target="toggleDiv1">
+                    <div class="circle">
+                        <div class="bar"></div>
+                        <div class="box"><span>85%</span></div>
+                    </div>
+                    <div class="langage-container">
+                        <div class="icon"><img src="./img/css.svg"></div>
+                        <div class="text">HTML & CSS</div>
+                    </div>
+                </div>
+
+                <div class="card Java toggleButton zoom" data-target="toggleDiv2">
+                    <div class="circle">
+                        <div class="bar"></div>
+                        <div class="box"><span>85%</span></div>
+                    </div>
+                    <div class="langage-container">
+                        <div class="icon"><img src="./img/java.png"></div>
+                        <div class="text">Java</div>
+                    </div>
+                </div>
+
+                <div class="card PHP toggleButton zoom" data-target="toggleDiv3">
                     <div class="circle">
                         <div class="bar"></div>
                         <div class="box"><span>80%</span></div>
                     </div>
-                    <div class="text">Python</div>
+                    <div class="langage-container">
+                        <div class="icon"><img src="./img/php.png"></div>
+                        <div class="text">PHP</div>
+                    </div>
                 </div>
-                <div class="card HTML">
+
+            </div>
+            <div class="wrapper reveal">
+
+                <div class="card Python toggleButton zoom" data-target="toggleDiv4">
                     <div class="circle">
                         <div class="bar"></div>
-                        <div class="box"><span>65%</span></div>
+                        <div class="box"><span>80%</span></div>
                     </div>
-                    <div class="text">HTML & CSS</div>
+                    <div class="langage-container">
+                        <div class="icon"><img src="./img/python.png"></div>
+                        <div class="text">Python</div>
+                    </div>
                 </div>
-                <div class="card SQL">
+
+                <div class="card C toggleButton zoom" data-target="toggleDiv5">
                     <div class="circle">
                         <div class="bar"></div>
                         <div class="box"><span>70%</span></div>
                     </div>
-                    <div class="text">SQL </div>
+                    <div class="langage-container">
+                        <div class="icon"><img src="./img/c.png"></div>
+                        <div class="text">C</div>
+                    </div>
                 </div>
 
-                <div class="card Java">
+                <div class="card bash toggleButton zoom" data-target="toggleDiv6">
                     <div class="circle">
                         <div class="bar"></div>
-                        <div class="box"><span>80%</span></div>
+                        <div class="box"><span>70%</span></div>
                     </div>
-                    <div class="text">Java</div>
+                    <div class="langage-container">
+                        <div class="icon"><img src="./img/js.png"></div>
+                        <div class="text">JS</div>
+                    </div>
                 </div>
-                
+
+            </div>
+        </div>
+
+        <div id="Logiciels" class="reveal">
+            <h3>Logiciels et outils</h3>
+            <div class="logiciels-container">
+                <div class="logiciel-container">
+                    <a target="_blank" href="https://www.figma.com/fr/"><img class="logo-logiciel zoom"
+                            src="./img/figma.png" alt="Figma">
+                        <p>Figma</p>
+                    </a>
+                </div>
+                <div class="logiciel-container">
+                    <a target="_blank" href="https://github.com/"><img class="logo-logiciel zoom"
+                            src="./img/githublogo.png" alt="Github">
+                        <p>Github</p>
+                    </a>
+                </div>
+                <div class="logiciel-container">
+                    <a target="_blank" href="https://fr.libreoffice.org/"><img class="logo-logiciel zoom"
+                            src="./img/libreoffice.png" alt="Libreoffice">
+                        <p>Libre office</p>
+                    </a>
+                </div>
+                <div class="logiciel-container">
+                    <a target="_blank" href="https://code.visualstudio.com/"><img class="logo-logiciel zoom"
+                            src="./img/vscode.png" alt="Visual Studio Code">
+                        <p>Visual Studio Code</p>
+                    </a>
+                </div>
+                <div class="logiciel-container">
+                    <a target="_blank" href="https://www.virtualbox.org/"><img class="logo-logiciel zoom"
+                            src="./img/vb.png" alt="Virtual Box">
+                        <p>Virtual Box</p>
+                    </a>
+                </div>
+                <div class="logiciel-container">
+                    <a target="_blank" href="https://www.phpmyadmin.net/"><img class="logo-logiciel zoom"
+                            src="./img/PHPMyadmin.png" alt="PHPMyadmin">
+                        <p>PHPMyAdmin</p>
+                    </a>
+                </div>
+                <div class="logiciel-container">
+                    <a target="_blank" href="https://www.postgresql.org/"><img class="logo-logiciel zoom"
+                            src="./img/postgresql.png" alt="PostGreSQL">
+                        <p>PostGreSQL</p>
+                    </a>
+                </div>
+                <div class="logiciel-container">
+                    <a target="_blank" href="https://eclipseide.org/"><img class="logo-logiciel zoom"
+                            src="./img/eclipse.png" alt="Eclipse">
+                        <p>Eclipse</p>
+                    </a>
+                </div>
+                <div class="logiciel-container">
+                    <a target="_blank" href="https://www.linux.org/"><img class="logo-logiciel zoom"
+                            src="./img/linux.png" alt="Linux">
+                        <p>Linux</p>
+                    </a>
+                </div>
+                <div class="logiciel-container">
+                    <a target="_blank" href="https://getbootstrap.com/"><img class="logo-logiciel zoom"
+                            src="./img/bootstrap.svg" alt="Bootstrap">
+                        <p>Bootstrap</p>
+                    </a>
+                </div>
             </div>
         </div>
         <!-- Soft skills -->
         <div id="Soft" class="reveal">
-            <h3 class="soft">Soft skills</h3>
-            <div class="soft-skills reveal ">
-                <div class="team zoom"><img src="img/team.svg"><span>Travail d'équipe</span></div>
-                <div class="idea zoom"><img src="img/idea.png"> <span>Créativité</span></div>
-                <div class="thinking zoom"><img src="img/thinking.png"> <span> Intelligence émotionnelle</span></div>
+            <h2> Soft skills</h2>
+            <div class="soft-skills reveal">
+                <div class="team"><span>Travail d'équipe</span><img src="img/team.png" class="zoom">
+                    <p class="soft-desc"> Collaboratrice efficace, capable de travailler harmonieusement avec
+                        les autres
+                        membres
+                        de l'équipe.</p>
+                    <p></p>
+                </div>
+                <div class="idea"><span>Créativité</span><img src="img/idea.png" class="zoom">
+                    <p class="soft-desc">Capacité à trouver des solutions innovantes et à penser de manière
+                        créative.
+                    </p>
+                </div>
+                <div class="thinking"><span>Adaptabilité</span><img src="img/thinking.png" class="zoom">
+                    <p class="soft-desc">Capable de s'ajuster rapidement aux nouvelles situations et aux
+                        exigences
+                        changeantes</p>
+                </div>
+                <div class="talk"><span>Communication</span><img src="./img/com.png" class="zoom">
+                    <p class="soft-desc">Communique de manière claire et concise, que ce soit à l'écrit ou à
+                        l'oral.
+                        Est à l'écoute des besoins des autres.</p>
+                </div>
             </div>
         </div>
         <!-- Langues -->
         <div id="Langues" class="reveal">
             <h3>Langues</h3>
             <div class="langues reveal">
-                <div class="France zoom"><img src="img/France.svg"><span>Français</span><span>Natale</span></div>
-                <div class="Royaume-Uni zoom"><img src="img/Royaume-Uni.png"> <span>Anglais</span><span>Très bon</span></div>
-                <div class="Espagne zoom"><img src="img/Espagne.svg"> <span>Espagnol</span><span>Bon</span></div>
-                <div class="Vietnam zoom"><img src="img/Vietnam.svg"> <span>Vietnamien</span><span>Bon</span></div>
+                <div class="France zoom"><img src="img/France.svg"><span
+                        style="color:#2c2631!important; margin-top: 10%;">Français</span><span>C2</span></div>
+                <div class="Royaume-Uni zoom"><img src="img/Royaume-Uni.png"> <span
+                        style="color:#2c2631!important; margin-top: 10%;">Anglais</span><span>C1</span>
+                </div>
+                <div class="Espagne zoom"><img src="img/Espagne.svg"> <span
+                        style="color:#2c2631!important; margin-top: 10%;">Espagnol</span><span>B1</span></div>
+                <div class="Vietnam zoom"><img src="img/Vietnam.svg"> <span
+                        style="color:#2c2631!important; margin-top: 10%;">Vietnamien</span><span>A2</span></div>
             </div>
         </div>
     </section>
@@ -209,130 +647,139 @@
     <section class="Projets" id="Projets">
         <h2 class="reveal">Mes projets</h2>
         <div class="projet reveal">
-            
+
             <div class="BatailleBoules">
                 <h3>Bataille des Boules</h3>
-                <a href="Projets.html#boules" target="_blank">
-                <div class="image">
-                    <div class="contenu">
-                        <p class="description">Un jeu de Boules en python !</p>
+                <a href="Projets.html?projet=Boules">
+                    <div class="image">
+                        <div class="contenu">
+                            <p class="description">Un jeu de Boules en python !</p>
+                        </div>
                     </div>
-                </div>
-            </a>
+                </a>
             </div>
             <div class="Grenade">
                 <h3>Site UNESCO de Grenade</h3>
-                <a href="Projets.html#Grenade" target="_blank">
-                <div class="image">
-                    <div class="contenu">
-                        <p class="description">Un site Web pour découvrir Grenade, en partenariat avec l'UNESCO</p>
+                <a href="Projets.html?projet=Grenade">
+                    <div class="image">
+                        <div class="contenu">
+                            <p class="description">Un site Web pour découvrir Grenade, en partenariat avec l'UNESCO</p>
+                        </div>
                     </div>
-                </div>
                 </a>
             </div>
 
             <div class="Ski">
                 <h3>Zarza-ski</h3>
-                <a href="Projets.html#Ski" target="_blank">
-                <div class="image">
-                    <div class="contenu">
-                        <p class="description">Un site pour gérer les clients d'une station de ski</p>
+                <a href="./Projets.html?projet=Ski">
+                    <div class="image">
+                        <div class="contenu">
+                            <p class="description">Un site pour gérer les clients d'une station de ski</p>
+                        </div>
                     </div>
-                </div>
                 </a>
             </div>
 
             <div class="Bricololo">
                 <h3>Bricololo</h3>
-                <a href="Projets.html#Bricololo" target="_blank">
-                <div class="image">
-                    <div class="contenu">
-                        <p class="description">Une maquette pour une application de bricolage</p>
+                <a href="Projets.html?projet=Bricololo">
+                    <div class="image">
+                        <div class="contenu">
+                            <p class="description">Une maquette pour une application de bricolage</p>
+                        </div>
                     </div>
-                </div>
                 </a>
             </div>
 
             <div class="Backpack">
                 <h3>Backpack Hero</h3>
-                <a href="Projets.html#Backpack" target="_blank">
-                <div class="image">
-                    <div class="contenu">
-                        <p class="description">Un version réduite en java du jeu originel</p>
+                <a href="Projets.html?projet=Backpack">
+                    <div class="image">
+                        <div class="contenu">
+                            <p class="description">Un version réduite en java du jeu originel</p>
+                        </div>
                     </div>
-                </div>
                 </a>
             </div>
 
             <div class="Graphes">
                 <h3>Exploration algorithmique</h3>
-                <a href="Projets.html#Graphes" target="_blank">
-                <div class="image">
-                    <div class="contenu">
-                        <p class="description">Implémentation de différents algorithmes vus en cours de graphes</p>
+                <a href="Projets.html?projet=Graphes">
+                    <div class="image">
+                        <div class="contenu">
+                            <p class="description">Implémentation de différents algorithmes vus en cours de graphes</p>
+                        </div>
                     </div>
-                </div>
                 </a>
             </div>
         </div>
 
         </div>
         <!-- Bouton pour accéder aux projets -->
-        <button>
-            <a href="Projets.html" target="_blank">Plus d'informations</a>
-        </button>
+        <div class="align-button">
+            <a href="Projets.html">
+                <button>
+                    Plus d'informations
+                </button>
+            </a>
+        </div>
     </section>
 
     <!-- Section Loisirs -->
     <section class="Loisirs" id="Loisirs">
         <h2>Loisirs</h2>
         <div class="Loisir reveal">
-            <div class="musique"><img src="img/musique.png" class="zoom">
+            <div class="musique"><img src="img/musique.png">
                 <h3>La musique</h3>
-                <p>J’ai commencé le piano à 6 ans, et avec cela le solfège, la chorale et mon intérêt
-                    pour la culture musicale.<br> Ainsi, j'ai continué ces activités pendant près de 10 ans. Cela a
-                    contribué fortement au développement de ma personnalité, en
-                    équilibrant l’intellect et l’affect.
+                <p>J’ai commencé le piano à 6 ans, et avec cela est venu le solfège, la chorale et mon intérêt
+                    pour la culture musicale.<br> Ainsi, j'ai poursuivi ces activités pendant près de 10 ans, ce qui a
+                    grandement contribué au développement de ma personnalité en équilibrant l'intellect et l'émotionnel.
                 </p>
             </div>
-            <div class="lire"><img src="img/livre.png" class="zoom">
+            <div class="lire"><img src="img/livre.png">
                 <h3>Lire</h3>
-                <p>Dès mon plus jeune âge j'ai développé une certaine affection pour la lecture. Je pouvais utiliser mon
-                    imagination et me plonger dans divers univers .</p>
+                <p>Dès mon plus jeune âge j'ai développé un goût prononcé pour la lecture. J'adorais dévorer tous
+                    les livres auxquels j'avais accès.
+                    Je pouvais utiliser mon imagination et me plonger dans divers univers.</p>
             </div>
-            <div class="jeu"><img src="img/manette.png" class="zoom">
+            <div class="jeu"><img src="img/manette.png">
                 <h3>Jouer aux jeux vidéos</h3>
                 <p>Bien sûr, jouer aux jeux vidéos fait partie des loisirs auquels je dédie la plus grande partie de mon
                     temps libre. Ces jeux permettent de stimuler la mémoire, la vision, la synchronisation entre les
                     yeux et les mains, tout en favorisant l'apprentissage. </p>
             </div>
-            <div class="code"><img src="img/code.png" class="zoom">
+            <div class="code"><img src="img/code.png">
                 <h3>Programmer</h3>
-                <p>Pour moi, programmer n'est pas une corvée mais un loisir. J'aime passer mon temps à établir des
-                    algorithmes visant à la résolution de problèmes. Je trouve cela fascinant.</p>
+                <p>Pour moi, programmer n'est pas une corvée mais un loisir. J'apprécie le défi intellectuel imposés et
+                    je trouve gratifiant de voir mes programmes en action, résolvant des problèmes réels.</p>
             </div>
         </div>
     </section>
     <!-- Section Contact -->
     <section class="Contact" id="Contact">
         <h2 class="reveal">Me contacter</h2>
+        <div class="bubble-speech bubble-center">
+            <p class="astuce">&hearts;&nbsp;&nbsp;Astuce : Voir le footer !</p>
+        </div>
         <!-- Formulaire -->
-        <FORM action="mailto:dieu-tien.houangkeo@edu.univ-eiffel.fr" method="post" class="reveal">
+        <FORM action="back/mailer.php" method="post" class="reveal">
             <LABEL for="nom">Votre nom</LABEL>
             <br>
-            <INPUT type="text" id="nom" placeholder="ex: jean-michel" required>
+            <INPUT type="text" id="nom" name="nom" placeholder="ex: jean-michel" required>
             <br>
             <LABEL for="email">Votre adresse e-mail</LABEL>
             <br>
-            <INPUT type="email" id="email" placeholder="ex: jean-michel@example.com" required>
+            <INPUT type="email" id="email" name="email" placeholder="ex: jean-michel@example.com" required>
+            <br>
+            <LABEL for="objet">L'objet du message</LABEL>
+            <br>
+            <INPUT type="text" id="objet" name="objet" placeholder="ex: Offre" required>
             <br>
             <LABEL for="message">Votre message&emsp;</LABEL> <br>
-            <TEXTAREA id="commentaire_produit" name="commentaire_produit" COLS="30" ROWS="5"
-                placeholder="ex:bonjour,..."></TEXTAREA>
+            <TEXTAREA id="message" name="message" COLS="30" ROWS="6" placeholder="ex:bonjour,..."></TEXTAREA>
 
             <br>
             <INPUT type="submit" value="Envoyer">
-
         </FORM>
     </section>
     <div id="flechehaut">
@@ -358,25 +805,32 @@
                     <div class="social">
                         <h4>Réseaux</h4>
                         <a href="https://github.com/Hyprra"><img src="./img/github.png"></a>
-                        <a href="https://www.instagram.com/ff.grenade/"><img src="./img/email.png"></a>
+                        <div class="tooltip"><img src="./img/email.png">
+                            <span class="tooltiptext">houangkeo@gmail.com</span>
+                        </div>
+                        <div class="tooltip"><img src="./img/phone.png">
+                            <span class="tooltiptext">06 51 23 85 02</span>
+                        </div>
                     </div>
                 </td>
             </tr>
             <tr>
                 <td colspan="3">
                     <div class="rights">
-                        Copyright © 2022 ⋅ HOUANGKEO Emeline ⋅ Tous droits réservés
+                        Copyright © 2023 ⋅ HOUANGKEO Emeline ⋅ Tous droits réservés
                     </div>
                 </td>
             </tr>
         </table>
     </footer>
     <!-- Code pour les progress bar -->
-    <script src="progress.js"></script>
+    <script src="script/progress.js"></script>
     <!-- Code pour le menu -->
-    <script src="menu.js"></script>
+    <script src="script/menu.js"></script>
 
-    <script src="bouton.js"></script>
+    <script src="script/bouton.js"></script>
+    <script src="script/reveal.js"></script>
+    <script src="./script/toggle.js"></script>
 </body>
 
 </html>

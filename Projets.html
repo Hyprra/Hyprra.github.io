@@ -9,9 +9,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HOUANGKEO Emeline</title>
-    <link rel="stylesheet" href="styleprojet.css" />
-    <link rel="stylesheet" href="navbar.css" />
-    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="css/varColor.css">
+    <link rel="stylesheet" href="css/styleprojet.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/footer.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
     <link rel="icon" type="image/svg" sizes="32x32" href="./img/heart.svg">
@@ -20,18 +21,12 @@
 <body>
     <header>
         <!-- La barre de navigation -->
-        <div class="logo"><img src="img/LOGO.png"></div>
+        <div class="logo"><a href="./index.html"><img src="img/LOGO.png"></a></div>
         <nav>
             <ul class="menu">
                 <div class="fermer"></div>
-                <li class="item"><a href="#">Mes projets</a></li>
-                <li class="item"><a href="#boules">Bataille des Boules</a></li>
-                <li class="item"><a href="#Grenade">Grenade</a></li>
-                <li class="item"><a href="#Ski">Zarza-Ski</a></li>
-                <li class="item"><a href="#Bricololo">Bricololo</a></li>
-                <li class="item"><a href="#Backpack">Backpack Hero</a></li>
-                <li class="item"><a href="#Graphes">Graphes</a></li>
-                <li class="item"><a href="index.html">Revenir à l'Accueil</a></li>
+
+                <li class="item"><a href="index.html#Projets">Revenir à l'accueil</a></li>
                 <div class="scroll"></div>
             </ul>
         </nav>
@@ -39,62 +34,315 @@
 
     </header>
     <section id="Titre">
-        <h1>Mes projets</h1>
-        <button>
-            <a href="#Projets"><img src="img/fleche_next.png"></a>
-        </button>
-    </section>
-    <section id="Projets">
-        <div class="boules" id="boules">
-            <h2>La bataille des boules</h2>
-            <img src="img/BatailleBoules.png">
-            <p>La bataille des boules est un projet de 1ère année de BUT Informatique réalisé avec 2 de mes
-                camarades.<br>
-                Ce jeu consiste en un affrontement de placement de boules entre deux joueurs, chacun avec une couleur
-                distincte. Le but est d'occuper la plus grande surface possible avec sa couleur.<br>
-                L'objectif de la création de ce projet est d'implémenter un besoin client tout effectuant des
-                comparaisons d'approches algorithmiques.</p>
-            <button class="bout">
-                <a href="https://github.com/Hyprra/batailleboules">Voir le projet</a>
-            </button>
-
-            <button>
-                <a href="#Grenade"><img src="img/fleche_next.png"></a>
-            </button>
+        <div class="lstprojets">
+            <h1 class="reveal">Mes<br> projets</h1>
+            <ul class="reveal listeproj">
+                <li onclick="afficherSection('Boules')">Bataille des boules</li>
+                <li onclick="afficherSection('Ski')">Zarza-ski</li>
+                <li onclick="afficherSection('Bricololo')">Bricololo</li>
+                <li onclick="afficherSection('Backpack')">Backpack Hero</li>
+                <li onclick="afficherSection('Graphes')">Exploration algorithmique d'un problème</li>
+                <li onclick="afficherSection('Grenade')">Site sur la ville de Grenade</li>
+            </ul>
         </div>
+        <div class="proj-wrapper" id="Projets">
+            <div class="boules" id="sectionBoules">
+                <div class="proj-content">
+                    <h2>La bataille des boules - Binôme</h2>
+                    <img src="img/BatailleBoules.png">
+                    <p>La bataille des boules est un projet de 1ère année de BUT Informatique réalisé à l'aide d'une
+                        bibliothèque dérivée de Tkinter.<br>
+                        Ce jeu consiste en un affrontement de placement de boules entre deux joueurs, chacun avec une
+                        couleur
+                        distincte. Le but est d'occuper la plus grande surface possible avec sa couleur.<br>
+                        L'objectif de la création de ce projet est d'implémenter un besoin client tout effectuant des
+                        comparaisons d'approches algorithmiques.</p>
+                    <button class="bout">
+                        <a href="https://github.com/widfleer/Bataille-des-Boules">Voir le projet</a>
+                    </button>
+                </div>
+                <h3>Plus sur le projet</h3>
+                <div class="langlog">
 
-        <div class="Grenade" id="Grenade">
-            <h2>Site sur la ville de Grenade</h2>
-            <img src="img/Grenade.png">
-            <p>Dans le cadre de la SAE 1.05 : Recueil de besoins, nous devons réaliser un site pédagogique de médiation
-                culturelle et numérique. Cela implique de rendre accessible la culture aux publics les plus larges et de
-                les aider à développer un lien avec les technologies.
-                Et pour cela, nous avons choisi de baser notre site sur la ville de Grenade.
-                Ce site est en partenariat avec l'UNESCO.</p>
+                    <div class="lang">
+                        <p class="title">Langage et outils</p>
+                        <div class="langages-container">
 
-            <button class="bout">
-                <a href="https://github.com/FC-FLEM/SAE-UNESCO-RENDU-1/tree/main">Voir le projet</a>
-            </button>
-            <button>
-                <a href="#Ski"><img src="img/fleche_next.png"></a>
-            </button>
-        </div>
+                            <div>
+                                <img src="img/python.png" alt="Python">
+                                <p>Python</p>
+                            </div>
+                            <div>
+                                <img src="img/vscode.png" alt="VisualStudioCode">
+                                <p>Visual Studio Code</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="comp">
+                    <p class="title">Compétences :</p>
+                    <p class="desc">Développer des solutions logicielles adaptées au client en utilisant les meilleures
+                        approches algorithmiques.</p>
+                    <a class="comp-link" href="index.html#Compétences" target=_blank>
+                        <div class="bloc-comp">
+                            <div class="content-comp">
+                                Réaliser (Niveau 1)
+                            </div>
+                            <div class="languette">
+                                <ul>
+                                    <li>AC11.01 | Implémenter des conceptions simples</li>
+                                    <li>AC11.02 Elaborer des conceptions simples</li>
+                                    <li>AC11.03 Faire des essais et évaluer leurs résultats en regard des spécifications
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="comp-link" href="index.html#Compétences" target=_blank>
+                        <div class="bloc-comp">
+                            <div class="content-comp">
+                                Optimiser (Niveau 1)
+                            </div>
+                            <div class="languette">
+                                <ul>
+                                    <li>AC12.01 | Analyser un problème avec méthode (découpage en éléments
+                                        algorithmiques simples, structure de données...)</li>
+                                    <li>AC12.02 | Comparer des algorithmes pour des problèmes classiques (tris simples,
+                                        recherche...)</li>
+                                    <li>AC12.03 | Formaliser et mettre en œuvre des outils mathématiques pour
+                                        l'informatique</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </a>
+                    <p class="subtitle">S1.01 Implémentation d’un besoin client</p>
+                    <p>Cette SAÉ permet une première mise en pratique du
+                        développement autour d'un besoin client.<br>
+                        <b>Compétence ciblée</b> : Développer des applications informatiques simples
+                    </p>
+                    <ul><span class="prod"> Production :</span>
+                        <li>Code de l'application</li>
+                        <li>Traces d'exécution des jeux d'essais</li>
+                    </ul>
+                    <hr style="width:70%; margin: 50px 0;">
+                    <p class="subtitle">S1.02 Comparaison d’approches algorithmiques</p>
+                    <p>Cette SAÉ permet une première réflexion autour des stratégies algorithmiques pour résoudre un
+                        même problème.<br>
+                        <b>Compétence ciblée</b> : Appréhender et construire des algorithmes
+                    </p>
 
-        <div class="Ski" id="Ski">
-            <h2>Zarza-ski</h2>
-            <img src="img/Ski.png">
-            <p>Notre projet consiste à réaliser une base de données pour la société Zarza-Ski qui vend des séjours de
-                ski à bas prix dans une seule station de ski, à proximité d’un centre d’hébergement. <br>
-                Nous devons ensuite exploiter cette base de données en vue de la réalisation d'un site web dynamique.<br>
-                Ce projet est réalisé dans le but d'apprendre à créer une base de données et à l'exploiter.
-            </p>
-            <div class="comp">
-                <p class="title">Compétences :</p>
-                <p class="desc">Concevoir et mettre en place une base de données à
-                    partir d’un cahier des charges client</p>
-                <p class="subtitle">S1.04 Création d’une base de données</p>
-                <p>Cette SAÉ permet un premier contact avec la formalisation et
-                    l'implémentation d'une base de données</p>
+                    <ul> <span class="prod">Production : </span>
+                        <li>Code de l'application</li>
+                        <li>Présentation du problème et de la comparaison des
+                            différentes approches</li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="Grenade" id="sectionGrenade">
+                <div class="proj-content">
+                    <h2>Site sur la ville de Grenade - Cheffe de projet</h2>
+                    <img src="img/Grenade.png">
+                    <p>Dans le cadre de la <b>SAE 1.05 : Recueil de besoins</b> puis de la <b>SAE 2.06 : Organisation
+                            d'un travail</b>
+                        d'équipe, nous devions réaliser un site pédagogique en partenariat avec l'UNESCO. Ce site dédié
+                        de médiation culturelle et numérique
+                        implique de rendre accessible la culture aux publics les
+                        plus larges et de les aider à développer un lien avec les technologies.
+                        Pour cela, nous avons formé une équipe de 5 et porté notre choix sur la splendide ville de
+                        Grenade.</p>
+                    <button class="bout">
+                        <a href="https://github.com/FC-FLEM/SAE-UNESCO-RENDU-1/tree/main">Voir le projet</a>
+                    </button>
+                </div>
+                <h3>Plus sur le projet</h3>
+                <div class="langlog">
+                    <div class="lang">
+                        <p class="title">Langages</p>
+                        <div class="langages-container">
+                            <div>
+                                <img src="img/html.svg" alt="HTML">
+                                <p>HTML</p>
+                            </div>
+                            <div>
+                                <img src="img/css.svg" alt="CSS">
+                                <p>CSS</p>
+                            </div>
+                            <div>
+                                <img src="img/php.png" alt="PHP">
+                                <p>PHP</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="log">
+                        <p class="title">Outils</p>
+                        <div class="logiciels-container">
+                            <div>
+                                <img src="img/githublogo.png" alt="Github">
+                                <p>Github</p>
+                            </div>
+                            <div>
+                                <img src="img/vscode.png" alt="VisualStudioCode">
+                                <p>Visual Studio Code</p>
+                            </div>
+                            <div>
+                                <img src="img/jira.png" alt="Jira">
+                                <p>Jira</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="comp">
+                    <p class="title">Compétences :</p>
+                    <p class="desc">Dans un contexte professionnel, un client demande de
+                        formaliser ses attentes liées à un projet. Une équipe est créée et organise son travail pour
+                        réaliser cette mission. Nous pouvons développer nos compétences en développement web,
+                        design d'interface utilisateur, gestion de projet, communication, médiation culturelle et
+                        gestion de contenu.</p>
+                    <a class="comp-link" href="index.html#Compétences" target=_blank>
+                        <div class="bloc-comp">
+                            <div class="content-comp">
+                                Conduire (Niveau 1)
+                            </div>
+                            <div class="languette">
+                                <ul>
+                                    <li>AC15.01 | Appréhender les besoins du client et de l'utilisateur</li>
+                                    <li>AC15.03 | Identifier les acteurs et les différentes phases d'un cycle de développement</li>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="comp-link" href="index.html#Compétences" target=_blank>
+                        <div class="bloc-comp">
+                            <div class="content-comp">
+                                Collaborer (Niveau 1)
+                            </div>
+                            <div class="languette">
+                                <ul>
+                                    <li>AC16.01 | Appréhender l'écosystème numérique</li>
+                                    <li>AC16.02 | Découvrir les aptitudes requises selon les différents secteurs
+                                        informatiques</li>
+                                    <li>AC16.03 | Identifier les statuts, les fonctions et les rôles de chaque membre
+                                        d'une équipe pluridisciplinaire</li>
+                                    <li>AC16.04 | Acquérir les compétences interpersonnelles pour travailler en équipe
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </a>
+                    <p class="subtitle">S1.05 Recueil de besoins</p>
+                    <p>Cette SAÉ permet de se familiariser avec la conduite de projet à
+                        partir d'un besoin client</p>
+                    <ul><span class="prod"> Production :</span>
+                        <li>Questionnaire destiné au client</li>
+                        <li>Présentation des besoins (maquettes, scénarios,
+                            persona…) s'appuyant sur des outils de bureautique</li>
+                        <li>Présentation orale accompagnée de différents
+                            supports numériques (site web, poster, affiche,
+                            powerpoint...)</li>
+                    </ul>
+                    <hr style="width:70%; margin: 50px 0;">
+                    <p class="subtitle">SAE 2.06 Organisation d'un travail d'équipe</p>
+                    <p>Cette SAÉ permet une première expérience des problématiques
+                        liées au travail en équipe dans des contextes simples</p>
+                    <ul> <span class="prod">Production : </span>
+                        <li>Éléments résultant de la production du travail en
+                            équipe</li>
+                        <li>Rapport d'organisation</li>
+                        <li>Restitution orale ou visuelle</li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="Ski" id="sectionSki">
+                <div class="proj-content">
+                    <h2>Zarza-ski - Binôme</h2>
+                    <img src="img/Ski.png">
+                    <p>Notre projet consiste à réaliser une base de données pour la société Zarza-Ski qui vend
+                        des
+                        séjours
+                        de
+                        ski à bas prix dans une seule station de ski, à proximité d’un centre d’hébergement.
+                        <br>
+                        Nous devons ensuite exploiter cette base de données en vue de la réalisation d'un site
+                        web
+                        dynamique.<br>
+                        Ce projet est réalisé dans le but d'apprendre à créer une base de données et à
+                        l'exploiter.
+                    </p>
+                    <button class="bout">
+                        <a href="https://github.com/widfleer/Zarza-Ski">Voir le projet</a>
+                    </button>
+
+                </div>
+                <h3>Plus sur le projet</h3>
+                <div class="langlog">
+
+                    <div class="lang">
+                        <p class="title">Langages</p>
+                        <div class="langages-container">
+                            <div>
+                                <img src="img/html.svg" alt="HTML">
+                                <p>HTML</p>
+                            </div>
+                            <div>
+                                <img src="img/css.svg" alt="CSS">
+                                <p>CSS</p>
+                            </div>
+                            <div>
+                                <img src="img/php.png" alt="PHP">
+                                <p>PHP</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="log">
+                        <p class="title">Outils</p>
+                        <div class="logiciels-container">
+                            <div>
+                                <img src="img/PHPMyadmin.png" alt="PhpMyAdmin">
+                                <p>PhpMyAdmin</p>
+                            </div>
+                            <div>
+                                <img src="img/vscode.png" alt="VisualStudioCode">
+                                <p>Visual Studio Code</p>
+                            </div>
+                            <div>
+                                <img src="img/postgresql.png" alt="MySQL">
+                                <p>PostGreSQL</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="comp">
+                    <p class="title">Compétences :</p>
+                    <p class="desc">Concevoir et mettre en place une base de données à
+                        partir d’un cahier des charges client</p>
+                    <a class="comp-link" href="index.html#Compétences" target=_blank>
+                        <div class="bloc-comp">
+                            <div class="content-comp">
+                                Gérer (Niveau 1)
+                            </div>
+                            <div class="languette">
+                                <ul>
+                                    <li>AC14.01 | Mettre à jour et interroger une base de données relationnelle (en
+                                        requêtes directes ou à travers une application)</li>
+                                    <li>
+                                        AC14.02 | Visualiser des données
+                                    </li>
+                                    <li>AC14.03 | Concevoir une base de données relationnelle à partir d'un cahier des
+                                        charges</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </a>
+                    <p class="subtitle">S1.04 Création d’une base de données</p>
+                    <p>Cette SAÉ permet un premier contact avec la formalisation et
+                        l'implémentation d'une base de données</p>
                     <ul><span class="prod"> Production :</span>
                         <li> Jeu de données</li>
                         <li>Modèle de données</li>
@@ -102,11 +350,12 @@
                             entreprise</li>
                         <li>Script de création de la base de données</li>
                     </ul>
-                <p class="subtitle">S1.05 Exploitation d’une base de données</p>
-                <p>Cette SAÉ permet une première approche complète des
-                    aspects de conception, implémentation, administration et
-                    exploitation d'une base de données.</p>
-                    
+                    <hr style="width:70%; margin: 50px 0;">
+                    <p class="subtitle">S2.04 Exploitation d’une base de données</p>
+                    <p>Cette SAÉ permet une première approche complète des
+                        aspects de conception, implémentation, administration et
+                        exploitation d'une base de données.</p>
+
                     <ul> <span class="prod">Production : </span>
                         <li>Étude des données et visualisation des informations</li>
                         <li>Modèle de données</li>
@@ -114,111 +363,245 @@
                         <li>Script de création de base de données</li>
 
                     </ul>
+                </div>
             </div>
-            <button class="bout">
-                <a href="https://github.com/Hyprra/zarzaski">Voir le projet</a>
-            </button>
-            <button>
-                <a href="#Bricololo"><img src="img/fleche_next.png"></a>
-            </button>
-        </div>
 
-        <div class="Bricololo" id="Bricololo">
-            <h2>Bricololo</h2>
-            <img src="img/Bricoscreen.png">
-            <p>L'objectif du projet est de développer une application qui permettra aux utilisateurs, qu'ils soient
-                débutants ou expérimentés en bricolage, d'être assistés dans leurs réparations et maintenances.<br>
-                Elle propose une assistance étape par étape, un diagnostic de panne, des listes d'outils nécessaires,
-                des règles de sécurité, des tutoriels, et une connexion avec d'autres bricoleurs.<br>
-                Ce projet d'application de bricolage offre l'occasion d'apprendre la conception centrée sur
-                l'utilisateur, l'interface homme-machine (IHM), l'intégration de fonctionnalités,
-                la gestion des données utilisateur et l'apprentissage automatique.
-            </p>
-            <button class="bout">
-                <a href="https://www.figma.com/proto/rSbfFmkKHoWo635BlrQsip/BricoLolo---Groupe-4?type=design&node-id=247-105&t=GiXEedeu4Mz5AUxj-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=247%3A105&mode=design">Voir le projet</a>
-            <button>
-                <a href="#Backpack"><img src="img/fleche_next.png"></a>
-            </button>
-        </div>
+            <div class="Bricololo" id="sectionBricololo">
+                <div class="proj-content">
+                    <h2>Bricololo - co-Cheffe de projet</h2>
+                    <img src="img/Bricoscreen.png">
+                    <p>L'objectif du projet est de développer une application qui permettra aux utilisateurs, qu'ils
+                        soient
+                        débutants ou expérimentés en bricolage, d'être assistés dans leurs réparations et
+                        maintenances.<br>
+                        Elle propose une assistance étape par étape, un diagnostic de panne, des listes d'outils
+                        nécessaires,
+                        des règles de sécurité, des tutoriels, et une connexion avec d'autres bricoleurs.<br>
+                        Ce projet d'application de bricolage offre l'occasion d'apprendre la conception centrée sur
+                        l'utilisateur, l'interface homme-machine (IHM), l'intégration de fonctionnalités,
+                        la gestion des données utilisateur et l'apprentissage automatique.
+                    </p>
+                    <button class="bout">
+                        <a
+                            href="https://www.figma.com/proto/rSbfFmkKHoWo635BlrQsip/BricoLolo---Groupe-4?type=design&node-id=247-105&t=GiXEedeu4Mz5AUxj-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=247%3A105&mode=design">Voir
+                            le projet</a>
+                </div>
+                <h3>Plus sur le projet</h3>
+                <div class="langlog">
 
-        <div class="Backpack" id="Backpack">
-            <h2>Backpack Hero</h2>
-            <img src="img/Backpackscreen.png">
-            <p>Le projet "Backpack Hero" consiste à développer un jeu en Java où le joueur incarne un héros chargé
-                d'explorer un monde fantastique, combattre des monstres et collecter des objets précieux.<br>
-                Le héros dispose d'un sac à dos pour stocker les objets trouvés au cours de son aventure. Le but du jeu
-                est de réussir différentes quêtes et d'améliorer les compétences du héros en utilisant les objets
-                collectés.<br>
-                Ce projet m'a permis de développer mes compétences en programmation Java, en concevant des
-                fonctionnalités de jeu interactives et en gérant la logique du jeu. Tout en apprennant la programmation
-                orientée objet.
-            </p>
-            <button class="bout">
-                <a href="https://github.com/Hyprra/backpack-hero">Voir le projet</a>
-            </button>
+                    <div class="lang">
+                        <p class="title">Langage et outils</p>
+                        <div class="langages-container">
+                            <div>
+                                <img src="img/figma.png" alt="Figma">
+                                <p>Figma</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="comp">
+                    <p class="title">Compétences :</p>
+                    <p class="desc">Mettre en pratique les connaissances en matière de conception d'interfaces
+                        conviviales et ergonomiques.</p>
+                    <a class="comp-link" href="index.html#Compétences" target=_blank>
+                        <div class="bloc-comp">
+                            <div class="content-comp">
+                                Conduire (Niveau 1)
+                            </div>
+                            <div class="languette">
+                                <ul>
+                                    <li>AC15.01 Appréhender les besoins du client et de l'utilisateur</li>
+                                    <li>AC15.02 | Mettre en place les outils de gestion de projet</li>
+                                    <li>AC15.03 | Identifier les acteurs et les différentes phases d'un cycle de
+                                        développement</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </a>
+                    <p class="subtitle">S2.05 Gestion d’un projet</p>
+                    <p>Cette SAÉ permet une
+                        familiarisation avec la conduite de projet à travers un
+                        sujet simple.<br>
+                        <b>Compétence ciblée</b> : Identifier les besoins métiers des clients et des
+                        utilisateurs
+                    </p>
+                    <ul><span class="prod"> Production :</span>
+                        <li>Cahier des charges</li>
+                        <li>Dossier de gestion de projet (Gantt, Pert, évaluation
+                            des ressources, calcul de budget)</li>
+                        <li>Étude économique du projet en anglais</li>
+                    </ul>
+                </div>
+            </div>
 
-            <button>
-                <a href="#Graphes"><img src="img/fleche_next.png"></a>
-            </button>
-        </div>
+            <div class="Backpack" id="sectionBackpack">
+                <div class="proj-content">
+                    <h2>Backpack Hero - Binôme</h2>
+                    <img src="img/Backpackscreen.png">
+                    <p>Le projet "Backpack Hero" consiste à développer un jeu en Java où le joueur incarne un héros
+                        chargé
+                        d'explorer un monde fantastique, combattre des monstres et collecter des objets
+                        précieux.<br>
+                        Le héros dispose d'un sac à dos pour stocker les objets trouvés au cours de son aventure. Le
+                        but du jeu est de réussir différentes quêtes et d'améliorer les compétences du héros en
+                        utilisant les
+                        objets
+                        collectés.<br>
+                        Ce projet m'a permis de développer mes compétences en programmation Java, en concevant des
+                        fonctionnalités de jeu interactives et en gérant la logique du jeu. Tout en apprennant la
+                        programmation
+                        orientée objet.
+                    </p>
+                    <button class="bout">
+                        <a href="https://github.com/widfleer/BackPack-Hero">Voir le projet</a>
+                    </button>
+                </div>
+                <h3>Plus sur le projet</h3>
+                <div class="langlog">
 
-        <div class="Graphes" id="Graphes">
-            <h2>Exploration algorithmique d'un problème</h2>
-            <img src="img/Graphes.png">
-            <p>Le projet implique l'implémentation d'algorithmes liés aux graphes en Python<br>
-                Cette initiative passionnante offre une excellente occasion d'acquérir et de développer des compétences
-                avancées en programmation, tout en se familiarisant avec la manipulation de structures de données
-                complexes<br>
-                En se plongeant dans les concepts fondamentaux des graphes et des automates, ce projet permet également
-                d'approfondir ses connaissances en matière de théorie des graphes et d'automates, ouvrant ainsi la voie
-                à une compréhension plus approfondie des problèmes de réseau et de parcours de graphes.
-            </p>
+                    <div class="lang">
+                        <p class="title">Langage et outils</p>
+                        <div class="langages-container">
+                            <div>
+                                <img src="img/java.png" alt="Java">
+                                <p></p>
+                            </div>
+                            <div>
+                                <img src="img/eclipse.png" alt="Eclipse">
+                                <p>Eclipse</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="comp">
+                    <p class="title">Compétences :</p>
+                    <p class="desc">En partant d'un besoin exprimé par un client et
+                        nécessitant une interface graphique, l'objectif est de
+                        formaliser les besoins, proposer une conception,
+                        implémenter et tester son développement.</p>
+                    <a class="comp-link" href="index.html#Compétences" target=_blank>
+                        <div class="bloc-comp">
+                            <div class="content-comp">
+                                Réaliser (Niveau 1)
+                            </div>
+                            <div class="languette">
+                                <ul>
+                                    <li>AC11.01 | Implémenter des conceptions simples</li>
+                                    <li>AC11.02 Elaborer des conceptions simples</li>
+                                    <li>AC11.03 Faire des essais et évaluer leurs résultats en regard des spécifications
+                                    </li>
+                                    <li>AC11.04 Développer des interfaces utilisateurs</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </a>
+                    <p class="subtitle">S2.01 Développement d’une application</p>
+                    <p>Cette SAÉ permet la concrétisation du développement autour d'une
+                        application avec une interface graphique répondant à un
+                        contexte précis.<br>
+                        <b>Compétence ciblée</b> : Développer des applications informatiques simples
+                    </p>
+                    <ul><span class="prod"> Production :</span>
+                        <li>Diagrammes d'analyse et de conception</li>
+                        <li>Code de l'application</li>
+                        <li>Jeu d'essais prouvant le respect des spécifications</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="Graphes" id="sectionGraphes">
+                <div class="proj-content">
+                    <h2>Exploration algorithmique d'un problème - Binôme</h2>
+                    <img src="img/Graphes.png">
+                    <p>Le projet implique l'implémentation d'algorithmes liés aux graphes en Python<br>
+                        Cette initiative passionnante offre une excellente occasion d'acquérir et de développer des
+                        compétences
+                        avancées en programmation, tout en se familiarisant avec la manipulation de structures de
+                        données
+                        complexes<br>
+                        En se plongeant dans les concepts fondamentaux des graphes et des automates, ce projet
+                        permet
+                        également
+                        d'approfondir ses connaissances en matière de théorie des graphes et d'automates, ouvrant
+                        ainsi
+                        la
+                        voie
+                        à une compréhension plus approfondie des problèmes de réseau et de parcours de graphes.
+                    </p>
+                    <button class="bout">
+                        <a href="https://github.com/widfleer/Algorithmes-Graphes-Automates">Voir le projet</a>
+                    </button>
+                </div>
+                <h3>Plus sur le projet</h3>
+                <div class="langlog">
+
+                    <div class="lang">
+                        <p class="title">Langage et outils</p>
+                        <div class="langages-container">
+                            <div>
+                                <img src="img/python.png" alt="Python">
+                                <p>Python</p>
+                            </div>
+                            <div>
+                                <img src="img/vscode.png" alt="VSCode">
+                                <p>Visual Studio Code</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="comp">
+                    <p class="title">Compétences :</p>
+                    <p class="desc">Face à un problème qui a été préalablement modélisé, il
+                        faut explorer des solutions algorithmiques diverses au
+                        problème posé. L'approche doit s'intéresser à
+                        l'implémentation bas niveau (par exemple chemins
+                        d'exécution, structures de données) ainsi qu'à haut
+                        niveau (par exemple précision des résultats,
+                        benchmarks, etc.)</p>
+                    <a class="comp-link" href="index.html#Compétences" target=_blank>
+                        <div class="bloc-comp">
+                            <div class="content-comp">
+                                Optimiser (Niveau 1)
+                            </div>
+                            <div class="languette">
+                                <ul>
+                                    <li>AC12.01 | Analyser un problème avec méthode (découpage en éléments
+                                        algorithmiques simples, structure de données...)</li>
+                                    <li>AC12.02 | Comparer des algorithmes pour des problèmes classiques (tris simples,
+                                        recherche...)</li>
+                                    <li>AC12.03 | Formaliser et mettre en œuvre des outils mathématiques pour
+                                        l'informatique</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </a>
+                    <p class="subtitle">S2.02 Exploration algorithmique d’un problème</p>
+                    <p> Cette SAÉ permet d'approfondir la
+                        réflexion sur l'approche algorithmique des problèmes
+                        rencontrés pendant les phases de développement.<br>
+                        <b>Compétence ciblée</b> : Appréhender et construire des algorithmes
+                    </p>
+                    <ul><span class="prod"> Production :</span>
+                        <li>Chaîne de compilation et exécutable, ou paquetage
+                            selon les standards du langage</li>
+                        <li>Code de l'application</li>
+                        <li>Présentation du problème et de la comparaison des
+                            différentes approches</li>
+                    </ul>
+                </div>
+            </div>
+
         </div>
-        <button class="bout">
-            <a href="https://github.com/Hyprra/graphes">Voir le projet</a>
-        </button>
-        <h2>Plus de projets à venir...!</h2>
     </section>
-    <div id="flechehaut">
-        <a href="#top"><img src="img/fleche_next.png" /></a>
-    </div>
-    <footer>
 
-        <table>
-            <tr>
-                <td class="ttext">
-                    <h4>Mentions légales :</h4>
-                    <li>icon - Flaticon</li>
-                    <li>Wallpaper - Ivan Samkov</li>
-                    <li>Avatar - Picrew</li>
-                </td>
-                <td class="ttext">
-                    <div class="elembas">
-                        <h4>Accès rapide</h4>
-                        <a href="./index.html">Accueil</a><span>|</span><a href="./Projets.html">Projets</a>
-                    </div>
-                </td>
-                <td class="ttext">
-                    <div class="social">
-                        <h4>Réseaux</h4>
-                        <a href="https://github.com/Hyprra"><img src="./img/github.png"></a>
-                        <a href="https://www.instagram.com/ff.grenade/"><img src="./img/email.png"></a>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="3">
-                    <div class="rights">
-                        Copyright © 2022 ⋅ HOUANGKEO Emeline ⋅ Tous droits réservés
-                    </div>
-                </td>
-            </tr>
-        </table>
-    </footer>
+
     <!-- Code pour les progress bar -->
-    <script src="progress.js"></script>
+    <script src="script/progress.js"></script>
     <!-- Code pour le menu -->
-    <script src="menu.js"></script>
+    <script src="script/menu.js"></script>
+    <script src="script/reveal.js"></script>
+    <script src="script/projets.js"></script>
+
 </body>
 
 </html>
