@@ -102,6 +102,17 @@
         cursor: pointer;
     }
 
+    .lstprojets ul li:hover {
+        color: var(--primary-color);
+    }
+
+    .item-active{
+        font-size: 1.1em!important;
+        font-weight:900;
+    }
+
+    /* Style pour les projets */
+
     .proj-wrapper {
         margin-top: 5%;
         display: flex;

@@ -1,9 +1,7 @@
 function afficherSection(section) {
     // Récupérer la section sélectionnée
     var sectionSelectionnee = document.getElementById('section' + section);
-
-    var lstprojets = document.querySelector('.listeproj');
-    var navsection = document.querySelectorAll('.navsection');
+    var itemSectionne = document.getElementById('item' + section);
 
     // Vérifier si la section est déjà affichée
     if (sectionSelectionnee.style.display === 'flex') {
@@ -12,8 +10,9 @@ function afficherSection(section) {
         setTimeout(function () {
             sectionSelectionnee.style.display = 'none';
         }, 200);
+        itemSectionne.classList.remove('item-active');
 
-        lstprojets.style.display = 'flex';
+        //lstprojets.style.display = 'flex';
         /*navsection.forEach(function (section) {
             section.classList.add('hide');
         });
@@ -29,11 +28,19 @@ function afficherSection(section) {
             section.style.display = 'none';
         });
 
+        var items = document.querySelectorAll('li[id^="item"]');
+        items.forEach(function (item) {
+            if (item.classList.contains('item-active')) {
+                item.classList.remove('item-active');
+            }
+        });
+
         // Afficher la section sélectionnée
         sectionSelectionnee.style.display = 'flex';
         setTimeout(function () {
             sectionSelectionnee.classList.add('unhide');
         }, 100);
+        itemSectionne.classList.add('item-active');
 
         //lstprojets.style.display = 'none';
         /*
@@ -47,5 +54,5 @@ function afficherSection(section) {
 // Récupérer la section à afficher
 const parametres = new URLSearchParams(window.location.search);
 const nom = parametres.get('projet');
-console.log(nom);
+
 afficherSection(nom);

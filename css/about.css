@@ -38,25 +38,20 @@
     padding-bottom: 5%;
 }
 
-.cliquable {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.obj img{
+    width:20vw;
 }
 
 .cliquable button {
     margin: 5% 0;
 }
 
-.cliquable a {
+.cliquable{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.obj img {
-    width: 50%;
+    padding: 5%;
 }
 
 .cliquable button > a {
@@ -71,11 +66,19 @@
     margin-top: 25px;
 }
 
+
+
 @media screen and (min-width: 1200px) {
     .presentation {
         padding-right: 10%;
     }
     .Objbutton {
         margin-top: 5%;
+    }
+}
+
+@media screen and (max-width: 1060px) {
+    .obj img{
+        width: 50vw;
     }
 }

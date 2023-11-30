@@ -264,6 +264,12 @@
     width:160px;
 }
 
+.note{
+    color:var(--background-color);
+    font-size: 1.1em;
+    margin : 10px 0;
+}
+
 .icon{
     width: 30px;
     margin-right: 10px;
