@@ -19,7 +19,7 @@ closeButtons.forEach(function(button) {
 
 function toggleElement(element) {
   if (element.style.display === 'none') {
-    element.style.display = 'block';
+    element.style.display = 'flex';
   } else {
     element.style.display = 'none';
   }

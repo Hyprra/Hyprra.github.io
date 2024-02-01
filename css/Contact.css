@@ -52,6 +52,7 @@ input[type=submit] {
     padding: 16px;
     text-align: center;
     border:var(--text-color2) 1px solid;
+    font-size: 1.4em;
 }
 
 .bubble-speech.bubble-center:after {

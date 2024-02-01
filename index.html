@@ -33,10 +33,17 @@
             <ul class="menu">
                 <div class="fermer"></div>
                 <li class="item"><a href="#about">A propos</a></li>
-                <li class="item deroulant"><a href="#Compétences">Compétences</a>
+                <li class="item deroulant"><a href="#Compétences">Hard Skills</a>
                     <ul class="sous">
-                        <li><a href="#Compétences">Hard skills</a></li>
+                        <li><a href="#academique">Academique</a></li>
+                        <li><a href="#Langages">Langages</a></li>
+                        <li><a href="#Logiciels">Logiciels</a></li>
+                    </ul>
+                </li>
+                <li class="item deroulant"><a href="#Compétences">Soft skills</a>
+                    <ul class="sous">
                         <li><a href="#Soft">Soft skills</a></li>
+                        <li><a href="#Langues">Langues</a></li>
                     </ul>
                 </li>
                 <li class="item"><a href="#Parcours">Parcours</a></li>
@@ -55,7 +62,9 @@
         <div>
             <h1 class="reveal">HOUANGKEO Emeline</h1>
             <p class="reveal">
-                Etudiante en BUT Informatique
+                Etudiante en BUT 2 Informatique<br><br>
+                En recherche de stage pour avril 2023<br>
+                10-12 semaines
             </p>
         </div>
 
@@ -130,98 +139,106 @@
                 <input type="checkbox" id="switch" /><label id="switch-label" for="switch">Toggle</label>
             </div>
             <div class="academique-wrapper reveal">
-                <div class="bloc-comp">
-                    <div class="content-comp">
-                        <p>Réaliser un développement d’application</p>
+                <div class="bloc-comp-container">
+                    <div class="bloc-comp">
+                        <div class="content-comp">
+                            <p>Réaliser un développement d’application</p>
+                        </div>
+                        <div class="languette" id="languette">
+                            <br>
+                            <p>Développer - c'est-à-dire concevoir, coder, tester et intégrer - une solution
+                                informatique
+                                pour un client.</p>
+                            <ul>
+                                <a href="./Projets.html?projet=Boules">
+                                    <li>Bataille des boules</li>
+                                </a>
+                                <a href="./Projets.html?projet=Backpack">
+                                    <li>BackPack Hero</li>
+                                </a>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="languette" id="languette">
-                        <br>
-                        <p>Développer - c'est-à-dire concevoir, coder, tester et intégrer - une solution informatique
-                            pour un client.</p>
-                        <ul>
-                            <a href="./Projets.html?projet=Boules">
-                                <li>Bataille des boules</li>
-                            </a>
-                            <a href="./Projets.html?projet=Backpack">
-                                <li>BackPack Hero</li>
-                            </a>
-                        </ul>
+                    <div class="bloc-comp">
+                        <div class="content-comp">
+                            <p>Optimiser des applications informatiques</p>
+                        </div>
+                        <div class="languette" id="languette">
+                            <br>
+                            <p>Proposer des applications informatiques optimisées en fonction de critères spécifiques:
+                                temps
+                                d'exécution, précision, consommation de ressources</p>
+                            <ul>
+                                <a href="./Projets.html?projet=Boules">
+                                    <li>Bataille des boules</li>
+                                </a>
+                                <a href="./Projets.html?projet=Graphes">
+                                    <li>Exploration algorithmique</li>
+                                </a>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                <div class="bloc-comp">
-                    <div class="content-comp">
-                        <p>Optimiser des applications informatiques</p>
-                    </div>
-                    <div class="languette" id="languette">
-                        <br>
-                        <p>Proposer des applications informatiques optimisées en fonction de critères spécifiques: temps
-                            d'exécution, précision, consommation de ressources</p>
-                        <ul>
-                            <a href="./Projets.html?projet=Boules">
-                                <li>Bataille des boules</li>
-                            </a>
-                            <a href="./Projets.html?projet=Graphes">
-                                <li>Exploration algorithmique</li>
-                            </a>
-                        </ul>
-                    </div>
-                </div>
-                <div class="bloc-comp">
-                    <div class="content-comp">
-                        <p>Administrer des systèmes informatiques communicants complexes</p>
-                    </div>
-                    <div class="languette" id="languette">
-                        <br>
-                        <p>Installer, configurer, mettre à disposition, maintenir en conditions opérationnelles des
-                            infrastructures, des services et des réseaux et optimiser le système informatique d'une
-                            organisation</p>
-                    </div>
-                </div>
-                <div class="bloc-comp">
-                    <div class="content-comp">
-                        <p>Gérer des données de l’information</p>
-                    </div>
-                    <div class="languette" id="languette">
-                        <br>
-                        <p>Concevoir, gérer, administrer et exploiter les données de l'entreprise et mettre à
-                            disposition toutes les informations pour un bon pilotage de l'entreprise</p>
-                        <ul>
-                            <a href="./Projets.html?projet=Ski">
-                                <li>Zarza-Ski</li>
-                            </a>
-                        </ul>
+                    <div class="bloc-comp">
+                        <div class="content-comp">
+                            <p>Administrer des systèmes informatiques communicants complexes</p>
+                        </div>
+                        <div class="languette" id="languette">
+                            <br>
+                            <p>Installer, configurer, mettre à disposition, maintenir en conditions opérationnelles des
+                                infrastructures, des services et des réseaux et optimiser le système informatique d'une
+                                organisation</p>
+                        </div>
                     </div>
                 </div>
-                <div class="bloc-comp">
-                    <div class="content-comp">
-                        <p>Conduire un projet</p>
+                <div class="bloc-comp-container">
+                    <div class="bloc-comp">
+                        <div class="content-comp">
+                            <p>Gérer des données de l’information</p>
+                        </div>
+                        <div class="languette" id="languette">
+                            <br>
+                            <p>Concevoir, gérer, administrer et exploiter les données de l'entreprise et mettre à
+                                disposition toutes les informations pour un bon pilotage de l'entreprise</p>
+                            <ul>
+                                <a href="./Projets.html?projet=Ski">
+                                    <li>Zarza-Ski</li>
+                                </a>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="languette" id="languette">
-                        <br>
-                        <p>Satisfaire les besoins des utilisateurs au regard de la chaîne de valeur du client, organiser
-                            et piloter un projet informatique avec des méthodes classiques ou agiles</p>
-                        <ul>
-                            <a href="./Projets.html?projet=Bricololo">
-                                <li>Bricololo</li>
-                            </a>
-                            <a href="./Projets.html?projet=Grenade">
-                                <li>Grenade</li>
-                            </a>
-                        </ul>
+                    <div class="bloc-comp">
+                        <div class="content-comp">
+                            <p>Conduire un projet</p>
+                        </div>
+                        <div class="languette" id="languette">
+                            <br>
+                            <p>Satisfaire les besoins des utilisateurs au regard de la chaîne de valeur du client,
+                                organiser
+                                et piloter un projet informatique avec des méthodes classiques ou agiles</p>
+                            <ul>
+                                <a href="./Projets.html?projet=Bricololo">
+                                    <li>Bricololo</li>
+                                </a>
+                                <a href="./Projets.html?projet=Grenade">
+                                    <li>Grenade</li>
+                                </a>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                <div class="bloc-comp">
-                    <div class="content-comp">
-                        <p>Travailler dans une équipe informatique</p>
-                    </div>
-                    <div class="languette" id="languette">
-                        <p>Acquérir, développer et exploiter les aptitudes nécessaires pour travailler efficacement dans
-                            une équipe informatique</p>
-                        <ul>
-                            <a href="./Projets.html?projet=Grenade">
-                                <li>Grenade</li>
-                            </a>
-                        </ul>
+                    <div class="bloc-comp">
+                        <div class="content-comp">
+                            <p>Travailler dans une équipe informatique</p>
+                        </div>
+                        <div class="languette" id="languette">
+                            <p>Acquérir, développer et exploiter les aptitudes nécessaires pour travailler efficacement
+                                dans
+                                une équipe informatique</p>
+                            <ul>
+                                <a href="./Projets.html?projet=Grenade">
+                                    <li>Grenade</li>
+                                </a>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>

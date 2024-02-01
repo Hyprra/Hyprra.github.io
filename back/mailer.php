@@ -6,9 +6,9 @@ use PHPMailer\PHPMailer\Exception;
 
 require_once './config.php';
 
-require './PHPMailer/PHPMailer/src/Exception.php';
-require './PHPMailer/PHPMailer/src/PHPMailer.php';
-require './PHPMailer/PHPMailer/src/SMTP.php';
+require '../PHPMailer/PHPMailer/src/Exception.php';
+require '../PHPMailer/PHPMailer/src/PHPMailer.php';
+require '../PHPMailer/PHPMailer/src/SMTP.php';
 
 function envoi_mail($from_name, $from_email, $subject, $message)
 {
@@ -40,7 +40,6 @@ function envoi_mail($from_name, $from_email, $subject, $message)
         return false;
     }
 }
-
 if (isset($_POST['nom']) && isset($_POST['email']) && isset($_POST['objet']) && isset($_POST['message'])) {
     $nom = $_POST['nom'];
     $email = $_POST['email'];
@@ -59,4 +58,3 @@ if (isset($_POST['nom']) && isset($_POST['email']) && isset($_POST['objet']) && 
     echo "non";
 }
 
-?>
