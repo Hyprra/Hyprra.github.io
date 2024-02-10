@@ -333,3 +333,9 @@
     }
 
 }
+
+@media (max-width:420px){
+    .bloc-comp{
+        width: 90vw!important;
+    }
+}
