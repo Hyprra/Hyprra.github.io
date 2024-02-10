@@ -1,8 +1,5 @@
 <?php
 
-header("Access-Control-Allow-Origin: *");
-header("Access-Control-Allow-Headers: *");
-
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
@@ -51,6 +48,7 @@ if (isset($_POST['nom']) && isset($_POST['email']) && isset($_POST['objet']) && 
     
     if (envoi_mail($nom, $email, $titre, $commentaire)) {
         echo 'OK';
+        header('Location: ../confirm.html');
         exit;
     } else {
         echo "Une erreur s'est produite";
