@@ -31,8 +31,8 @@ window.addEventListener('scroll', () =>{
           $(".HTML .bar").circleProgress({
             value: 0.85
           });
-          $(".bash .bar").circleProgress({
-            value: 0.60
+          $(".js .bar").circleProgress({
+            value: 0.80
           });
 
           $(".Java .bar").circleProgress({
@@ -40,6 +40,10 @@ window.addEventListener('scroll', () =>{
           });
 
           $(".C .bar").circleProgress({
+            value: 0.70
+          });
+
+          $(".Python .bar").circleProgress({
             value: 0.70
           });
           

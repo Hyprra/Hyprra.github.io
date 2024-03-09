@@ -37,12 +37,14 @@
         <div class="lstprojets">
             <h1 class="reveal">Mes<br> projets</h1>
             <ul class="reveal listeproj">
+                <li id="itemStarLetters" onclick="afficherSection('StarLetters')">StarLetters</li>
+                <li id="itemDSD" onclick="afficherSection('DSD')">DSDBank</li>
                 <li id="itemBoules" onclick="afficherSection('Boules')">Bataille des boules</li>
-                <li id="itemSki" onclick="afficherSection('Ski')">Zarza-ski</li>
                 <li id="itemBricololo" onclick="afficherSection('Bricololo')">Bricololo</li>
                 <li id="itemBackpack" onclick="afficherSection('Backpack')">Backpack Hero</li>
                 <li id="itemGraphes" onclick="afficherSection('Graphes')">Exploration algorithmique</li>
                 <li id="itemGrenade" onclick="afficherSection('Grenade')">Site sur la ville de Grenade</li>
+                <li id="itemSki" onclick="afficherSection('Ski')">Zarza-ski</li>
             </ul>
         </div>
         <div class="proj-wrapper" id="Projets">
@@ -94,7 +96,8 @@
                                 <ul>
                                     <li>AC11.01 | Implémenter des conceptions simples</li>
                                     <li>AC11.02 | Elaborer des conceptions simples</li>
-                                    <li>AC11.03 | Faire des essais et évaluer leurs résultats en regard des spécifications
+                                    <li>AC11.03 | Faire des essais et évaluer leurs résultats en regard des
+                                        spécifications
                                     </li>
                                 </ul>
                             </div>
@@ -499,7 +502,8 @@
                                 <ul>
                                     <li>AC11.01 | Implémenter des conceptions simples</li>
                                     <li>AC11.02 | Elaborer des conceptions simples</li>
-                                    <li>AC11.03 | Faire des essais et évaluer leurs résultats en regard des spécifications
+                                    <li>AC11.03 | Faire des essais et évaluer leurs résultats en regard des
+                                        spécifications
                                     </li>
                                     <li>AC11.04 | Développer des interfaces utilisateurs</li>
                                 </ul>
@@ -603,66 +607,119 @@
                     </ul>
                 </div>
             </div>
+            <div class="DSDBank" id="sectionDSD">
+                <div class="proj-content">
+                    <h2>DSDBank - Développeuse</h2>
+                    <img src="img/DSDBank.png">
+                    <p>DSDBank est un projet de 2ème année de BUT Informatique réalisé en groupes de 4. Il s'agit de
+                        développer un portail web de gestion de paiements bancaires pour une banque fictive. Ce projet
+                        est réalisé dans le but d'apprendre à développer en utilisant des
+                        technologies web modernes et des méthodes de développement agiles.</p>
+                    <a href="https://github.com/StarLetters/DSDBank" class="bout-a">
+                        <button class="bout">
+                            Voir le projet
+                        </button>
+                    </a>
+                </div>
+                <h3>Plus sur le projet</h3>
+                <div class="langlog">
 
-        </div>
-        <div class="DSDBank" id="sectionDSD">
-            <div class="proj-content">
-                <h2>DSDBank - Développeuse</h2>
-                <img src="img/DSDBank.png">
-                <p>DSDBank est un projet de 2ème année de BUT Informatique réalisé en groupes de 4. Il s'agit de
-                    développer un portail web de gestion de paiements bancaires pour une banque fictive. Ce projet
-                    est réalisé dans le but d'apprendre à développer en utilisant des
-                    technologies web modernes et des méthodes de développement agiles.</p>
-                <a href="https://github.com/StarLetters/DSDBank" class="bout-a">
-                    <button class="bout">
-                        Voir le projet
-                    </button>
-                </a>
-            </div>
-            <h3>Plus sur le projet</h3>
-            <div class="langlog">
-
-                <div class="lang">
-                    <p class="title">Langages</p>
-                    <div class="langages-container">
-                        <div>
-                            <img src="img/html.svg" alt="HTML">
-                            <p>HTML</p>
+                    <div class="lang">
+                        <p class="title">Langages</p>
+                        <div class="langages-container">
+                            <div>
+                                <img src="img/html.svg" alt="HTML">
+                                <p>HTML</p>
+                            </div>
+                            <div>
+                                <img src="img/css.svg" alt="CSS">
+                                <p>CSS</p>
+                            </div>
+                            <div>
+                                <img src="img/php.png" alt="PHP">
+                                <p>PHP</p>
+                            </div>
+                            <div>
+                                <img src="img/js.png" alt="JS">
+                                <p>JS</p>
+                            </div>
                         </div>
-                        <div>
-                            <img src="img/css.svg" alt="CSS">
-                            <p>CSS</p>
-                        </div>
-                        <div>
-                            <img src="img/php.png" alt="PHP">
-                            <p>PHP</p>
-                        </div>
-                        <div>
-                            <img src="img/js.png" alt="JS">
-                            <p>JS</p>
+                    </div>
+                    <div class="log">
+                        <p class="title">Outils</p>
+                        <div class="logiciels-container">
+                            <div>
+                                <img src="img/githublogo.png" alt="Github">
+                                <p>Github</p>
+                            </div>
+                            <div>
+                                <img src="img/vscode.png" alt="VisualStudioCode">
+                                <p>Visual Studio Code</p>
+                            </div>
+                            <div>
+                                <img src="img/notion.png" alt="Notion">
+                                <p>Notion</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="log">
-                    <p class="title">Outils</p>
-                    <div class="logiciels-container">
-                        <div>
-                            <img src="img/githublogo.png" alt="Github">
-                            <p>Github</p>
+                <!-- TODO -->
+            </div>
+
+            <div class="StarLetters" id="sectionStarLetters">
+                <div class="proj-content">
+                    <h2>StarLetters - Cheffe de projet</h2>
+                    <img src="img/StarLetters.png">
+                    <p>StarLetters est un projet de 2ème année de BUT Informatique réalisé en groupes de 4. Il s'agit de
+                        développer un jeu en ligne à un ou plusieurs joueurs basé sur les similarités entre mots.
+                        Le projet favorise l'intégration de différents langages et outils de façon modulaire.</p>
+                    </p>
+                    <a href="https://perso-etudiant.u-pem.fr/~lucas.merlin/StarLetters/frontend/pages/index.php"
+                        class="bout-a">
+                        <button class="bout">
+                            Voir le projet
+                        </button>
+                    </a>
+                </div>
+                <h3>Plus sur le projet</h3>
+                <div class="langlog">
+                    <div class="lang">
+                        <p class="title">Langages</p>
+                        <div class="langages-container">
+                            <div>
+                                <img src="img/php.png" alt="PHP">
+                                <p>PHP</p>
+                            </div>
+                            <div>
+                                <img src="img/js.png" alt="JS">
+                                <p>JS</p>
+                            </div>
+                            <div>
+                                <img src="img/react.png" alt="React">
+                                <p>React</p>
+                            </div>
                         </div>
-                        <div>
-                            <img src="img/vscode.png" alt="VisualStudioCode">
-                            <p>Visual Studio Code</p>
-                        </div>
-                        <div>
-                            <img src="img/notion.png" alt="Notion">
-                            <p>Notion</p>
+                    </div>
+                    <div class="log">
+                        <p class="title">Outils</p>
+                        <div class="logiciels-container">
+                            <div>
+                                <img src="img/githublogo.png" alt="Github">
+                                <p>Github</p>
+                            </div>
+                            <div>
+                                <img src="img/vscode.png" alt="VisualStudioCode">
+                                <p>Visual Studio Code</p>
+                            </div>
+                            <div>
+                                <img src="img/notion.png" alt="Notion">
+                                <p>Notion</p>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <!-- TODO -->
             </div>
-            <!-- TODO --> 
-        </div>
     </section>
 
 
