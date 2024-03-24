@@ -237,6 +237,9 @@ button {
     padding: 5px;
     font-size: 0.95em;
 }
+p{
+    font-family:  "EB Garamond";
+}
 
 /* Media queries pour la mise en page responsive */
 @media (max-width:1060px) {

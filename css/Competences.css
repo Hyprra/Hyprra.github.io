@@ -344,6 +344,35 @@
     flex-wrap: wrap;
 }
 
+.lstprojects a{
+    text-decoration: none;
+    color: var(--background-color);
+}
+
+.lstprojects button{
+    border : 1px solid var(--background-color);
+    background-color: white!important;
+    border-radius: 10px;
+    padding: 10px 15px;
+    margin: 10px;
+}
+
+.hiding-desc-comp{
+    height:0px;
+    display:none;
+    transition: height 0.3s ease-in-out;
+}
+
+.all-out .hiding-desc-comp{
+    height: 100%;
+    display: block;
+    transition: height 0.3s ease-in-out;
+}
+
+.lstprojects{
+    display : flex;
+}
+
 @media (max-width:900px) {
     .academique-wrapper{
         justify-content: center;
